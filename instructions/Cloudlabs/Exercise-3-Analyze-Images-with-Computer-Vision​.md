@@ -63,14 +63,11 @@ To test the capabilities of the Computer Vision service, we'll use a simple comm
     
     ![Wait for PowerShell to start.](../media/powershell-prompt.png)
     
-
 ### Task 3 : Configure and run a client application
 
 Now that you have a Cloud Shell environment, you can run a simple application that uses the Computer Vision service to analyze an image.
 
 1.  In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
-    
-    Copy
     
     ```
     git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
@@ -78,8 +75,6 @@ Now that you have a Cloud Shell environment, you can run a simple application th
     ```
     
 2.  The files are downloaded to a folder named  **ai-900**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell:
-    
-    Copy
     
     ```
     code .
@@ -122,8 +117,6 @@ Now that you have a Cloud Shell environment, you can run a simple application th
     
     In the PowerShell pane, enter the following commands to run the code:
     
-    Copy
-    
     ```
     cd ai-900
     ./analyze-image.ps1 store-camera-1.jpg
@@ -141,8 +134,6 @@ Now that you have a Cloud Shell environment, you can run a simple application th
     ![An image of person with a shopping basket in a supermarket](../media/store-camera-2.jpg)
     
     To analyze the second image, enter the following command:
-    
-    Copy
     
     ```
     ./analyze-image.ps1 store-camera-2.jpg
