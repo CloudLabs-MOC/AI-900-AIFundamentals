@@ -95,7 +95,7 @@ Now that you have a Cloud Shell environment, you can run a simple application th
    $endpoint="https..."
    ```
 
-5. Hover your mouse at the top right of the editor pane, select the **More** option to open the menu and select  **Save**  to save your changes. Then open the menu again and select  **Close Editor**.
+5. Click at the top right of the editor pane, to open the menu and select  **Save**  to save your changes. Then open the menu again and select  **Close Editor**.
 
    ![](../media/AI-900-m1-06.png) 
 
