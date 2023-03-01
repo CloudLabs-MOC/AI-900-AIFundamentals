@@ -107,7 +107,7 @@ Now that you have a Cloud Shell environment, you can run a simple application th
    
     >**Note** : `In the next part of the exercise we will be analysing the features of the images. We will however not be seeing the images inside the users's lab environment. But you can view the images in the integrated lab guide.`
    
-5.  Hover your mouse at the top right of the editor pane, select the **More** option to open the menu and select  **Save**  to save your changes. Then open the menu again and select  **Close Editor**.
+5.  Click at the top right of the editor pane, to open the menu and select  **Save**  to save your changes. Then open the menu again and select  **Close Editor**.
 
     ![](../media/AI-900-m3-03.png) .
     
