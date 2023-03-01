@@ -148,7 +148,6 @@ Now that you have a Cloud Shell environment, you can run a simple application th
     
     To analyze the third image, enter the following command:
     
-    Copy
     ```
     ./analyze-image.ps1 store-camera-3.jpg
     
