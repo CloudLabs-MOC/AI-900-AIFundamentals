@@ -18,14 +18,22 @@ If you haven't already done so, create a  **Cognitive Services**  resource in yo
 
 1.  In another browser tab, open the Azure portal at  [https://portal.azure.com](https://portal.azure.com/), signing in with your Microsoft account.
     
-2.  Click the  **＋Create a resource**  button, search for  _Cognitive Services_, and create a  **Cognitive Services**  resource with the following settings:
+2.  Click the  **＋Create a resource**  button, search for  _Cognitive Services_ and select it 
+
+    ![](../media/AI-900-m1-1.png)
+    
+3.  Click on **Create** drop down and select **Cognitive Services**.    
+
+    ![](../media/AI-900-m3-01.png)
+ 
+5.  Create a **Cognitive Services** resource with the following settings:
     
     -   **Subscription**:  _Your Azure subscription_.
     -   **Resource group**:  Select  existing resource group .
     -   **Region**:  _Choose any available region_:
     -   **Name**:  Cognitive-[DeploymentID]
-    -   **Pricing tier**: S0
-    -   **I confirm I have read and understood the notices**: Selected.
+    -   **Pricing tier**: Standard S0
+    -   **By checking this box I acknowledge that I have read and understood all the terms below**: Selected.
    
     **Note**:  Replace [DeploymentID] with your DeploymentId, which can be obtained from the Lab Environment Details page.
     
@@ -44,8 +52,7 @@ To test the capabilities of the Computer Vision service, we'll use a simple comm
 2.  The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (_Bash_  or  _PowerShell_). Select  **PowerShell**. If you do not see this option, skip the step.
     
 3. When prompted, select **Show advanced settings** and then select **Use existing** and choose existing resource group. Then select **Create new** against Storage account as well as File Share and provide a unique value in both of the fields and then click on **Create storage**, and wait for the Azure Cloud Shell to initialize.
-
-    
+  
     ![Create storage by clicking confirm.](../media/Ai-900p1.png)
     
 4.  Make sure the the type of shell indicated on the top left of the Cloud Shell pane is switched to  _PowerShell_. If it is  _Bash_, switch to  _PowerShell_  by using the drop-down menu.
@@ -105,13 +112,15 @@ Now that you have a Cloud Shell environment, you can run a simple application th
    
     >**Note** : `In the next part of the exercise we will be analysing the features of the images. We will however not be seeing the images inside the users's lab environment. But you can view the images in the integrated lab guide.`
    
-5.  At the top right of the editor pane, use the  **...**  button to open the menu and select  **Save**  to save your changes.
+5.  Hover your mouse at the top right of the editor pane, select the **More** option to open the menu and select  **Save**  to save your changes. Then open the menu again and select  **Close Editor**.
+
+    ![](../media/AI-900-m3-03.png) .
     
-    The sample client application will use your Computer Vision service to analyze the following image, taken by a camera in the Northwind Traders store:
+6.  The sample client application will use your Computer Vision service to analyze the following image, taken by a camera in the Northwind Traders store:
     
     ![An image of a parent using a cellphone camera to take a picture of a child in in a store](../media/store-camera-1.jpg)
     
-6.  In the PowerShell pane, enter the following commands to run the code:
+    In the PowerShell pane, enter the following commands to run the code:
     
     Copy
     
@@ -126,6 +135,7 @@ Now that you have a Cloud Shell environment, you can run a simple application th
     -   A suggested caption that describes the image.
     -   A list of objects identified in the image.
     -   A list of "tags" that are relevant to the image.
+    
 8.  Now let's try another image:
     
     ![An image of person with a shopping basket in a supermarket](../media/store-camera-2.jpg)
@@ -153,7 +163,7 @@ Now that you have a Cloud Shell environment, you can run a simple application th
     
     ```
     
-11.  Review the results of the image analysis for the third image.
+11. Review the results of the image analysis for the third image.
     
 
 ## Learn more
