@@ -18,15 +18,11 @@ If you haven't already done so, create a  **Cognitive Services**  resource in yo
 
 1.  In another browser tab, open the Azure portal at  [https://portal.azure.com](https://portal.azure.com/), signing in with your Microsoft account.
     
-2.  Click the  **＋Create a resource**  button, search for  _Cognitive Services_ and select it 
+2.  Click the  **＋Create a resource**  button. 
 
     ![](../media/AI-900-m1-1.png)
     
-3.  Click on **Create** drop down and select **Cognitive Services**.    
-
-    ![](../media/AI-900-m3-01.png)
- 
-5.  Create a **Cognitive Services** resource with the following settings:
+3.  Search for _Cognitive Services_, and Create a **Cognitive Services** resource with the following settings:
     
     -   **Subscription**:  _Your Azure subscription_.
     -   **Resource group**:  Select  existing resource group .
