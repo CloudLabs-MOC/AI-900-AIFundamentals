@@ -16,15 +16,11 @@ Let's start by creating an  **Anomaly Detector**  resource in your Azure subscri
 
 1. In another browser tab, open the Azure portal at  [https://portal.azure.com](https://portal.azure.com/), signing in with your Microsoft account.
     
-2.  Click the  **＋Create a resource**  button, search for **Anomaly Detector** and select it.
+2.  Click the  **＋Create a resource**  button.
 
     ![](../media/AI-900-m1-1.png)
       
-3.  Click on **Create** drop down and select **Anomaly Detector**.
-
-    ![](../media/AI-900-m1-3.png)
-    
-4.  Create **Anomaly Detector** resource with the following settings:
+2.  Search for **Anomaly Detector** and Create **Anomaly Detector** resource with the following settings:
  
     -   **Subscription**:  _Your Azure subscription_.
     -   **Resource group**:  _Select an existing resource group_.
