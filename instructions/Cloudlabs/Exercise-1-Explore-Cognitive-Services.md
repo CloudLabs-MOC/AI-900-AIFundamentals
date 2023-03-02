@@ -20,7 +20,7 @@ Let's start by creating an  **Anomaly Detector**  resource in your Azure subscri
 
     ![](../media/AI-900-m1-1.png)
       
-2.  Search for **Anomaly Detector** and Create **Anomaly Detector** resource with the following settings:
+2.  Search for _Anomaly Detector_, and Create **Anomaly Detector** resource with the following settings:
  
     -   **Subscription**:  _Your Azure subscription_.
     -   **Resource group**:  _Select an existing resource group_.
