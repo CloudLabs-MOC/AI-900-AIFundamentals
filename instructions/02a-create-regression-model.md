@@ -382,13 +382,13 @@ Your inference pipeline predicts prices for cars based on their features. Now yo
 After you've created and tested an inference pipeline for real-time inferencing, you can publish it as a service for client applications to use.
 
 > **Note**
-> In this exercise, you'll deploy the web service to an Azure Container Instance (ACI). This type of compute is created dynamically and is useful for development and testing. For production, you should create an *inference cluster*, which provides an Azure Kubernetes Service (AKS) cluster that provides better scalability and security.
+> In this exercise, you'll deploy the web service to an Azure Container Instance (ACI). This type of compute is created dynamically, and is useful for development and testing. For production, you should create an *inference cluster*, which provides an Azure Kubernetes Service (AKS) cluster that provides better scalability and security.
 
 ### Task 12: Deploy a service
 
 1. View the **Predict Auto Price** inference pipeline you created in the previous unit.
 
-1. Select **Job detail** on the left-hand pane, which will open a new tab.
+1. Select **Job detail** on the left hand pane, which will open a new tab.
 
     ![Screenshot of job details next to the completed job. ](media/ai900_mod02a_t12_s2.png)
 
@@ -410,7 +410,7 @@ After you've created and tested an inference pipeline for real-time inferencing,
     ![Screenshot of the location of the Endpoints option on the left-hand pane.](media/endpoints-lab-2a.png)
     
     >**Note:**
-    > You have to Wait for 15-20 minutes for the test code to reflect which can be seen in JSON format.
+    > You have to Wait for 15-20 minutes for the test code to reflect which can be seen in json format.
 
 1. When the **predict-auto-price** endpoint opens, select the **Test** tab. We will use it to test our model with new data. Delete the current data under **Input data to test real-time endpoint**. Copy and paste the below data into the data section:  
 
