@@ -108,7 +108,7 @@ In this exercise, you will use a dataset of historical bicycle rental details to
 
 > **Citation**: *This data is derived from [Capital Bikeshare](https://www.capitalbikeshare.com/system-data) and is used in accordance with the published data [license agreement](https://www.capitalbikeshare.com/data-license-agreement)*.
 
-## Run an automated machine learning job
+### Task 4: Run an automated machine learning job
 
 Follow the next steps to run a job that uses automated machine learning to train a regression model that predicts bicycle rentals.
 
@@ -166,7 +166,7 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 1. Wait for the job to finish. It might take a while — now might be a good time for a coffee break!
 
-## Task 4: Review the best model
+## Task 5: Review the best model
 
 1. On the **Overview** tab of the automated machine learning job, note the best model summary.
     ![Screenshot of the best model summary of the automated machine learning job with a box around the algorithm name.](media/use-automated-machine-learning/ai-900-overview.png)
@@ -189,7 +189,7 @@ Follow the next steps to run a job that uses automated machine learning to train
 
     ![Screenshot of the feature importance chart on the Explanations tab.](media/use-automated-machine-learning/feature-importance1.png)
 
-## Task 5: Deploy a predictive service
+## Task 6: Deploy a predictive service
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), on the **Automated ML** page, select your automated machine learning job.
 
@@ -215,7 +215,7 @@ Follow the next steps to run a job that uses automated machine learning to train
 
     ![Screenshot of location of Endpoints on the left hand menu.](media/endpoints1-02.png)
 
-## Task 6: Test the deployed service
+## Task 7: Test the deployed service
 
 Now you can test your deployed service.
 
