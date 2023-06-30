@@ -63,7 +63,7 @@ To test the capabilities of the Anomaly Detector service, we'll use a simple com
 
      ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img7.png)
  
-1. Please make sure you have selected your resource group **AI-900-Module-01-<inject key="DeploymentID" enableCopy="false"/> (1)** and enter **blob<inject key="DeploymentID" enableCopy="false"/> (2)** for the **Storage account Name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/> (3)** for the **File share Name**, then click on **Create Storage (4)e**.
+1. Please make sure you have selected your resource group **AI-900-Module-01-<inject key="DeploymentID" enableCopy="false"/> (1)** and enter **blob<inject key="DeploymentID" enableCopy="false"/> (2)** for the **Storage account Name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/> (3)** for the **File share Name**, then click on **Create Storage (4)**.
 
       ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img8.png)
 
