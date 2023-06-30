@@ -37,7 +37,7 @@ In this exercise, you will use a dataset of historical bicycle rental details to
 
 1. In Azure Machine Learning studio, you should see your newly created workspace. If that is not the case, select your Azure directory in the left-hand menu. Then from the new left-hand menu select **Workspaces**, where all the workspaces associated to your directory are listed, and **select the one you created for this exercise**.
 
-## Task 2: Create compute
+### Task 2: Create compute
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), select the **&#8801;** icon (a menu icon that looks like a stack of three lines) at the top left to view the various pages in the interface (you may need to maximize the size of your screen). You can use these pages in the left hand pane to manage the resources in your workspace. Select **Compute**(under **Manage**).
 
@@ -66,7 +66,7 @@ In this exercise, you will use a dataset of historical bicycle rental details to
        
    > **Note**:The compute cluster will take some time to be created. You can move onto the next step while you wait.
 
-## Task 3: Create a dataset
+### Task 3: Create a dataset
 
 1. View the comma-separated data at [https://aka.ms/bike-rentals](https://aka.ms/bike-rentals?azure-portal=true) in your web browser.
 
@@ -166,7 +166,7 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 1. Wait for the job to finish. It might take a while — now might be a good time for a coffee break!
 
-## Task 5: Review the best model
+### Task 5: Review the best model
 
 1. On the **Overview** tab of the automated machine learning job, note the best model summary.
     ![Screenshot of the best model summary of the automated machine learning job with a box around the algorithm name.](media/use-automated-machine-learning/ai-900-overview.png)
@@ -189,7 +189,7 @@ Follow the next steps to run a job that uses automated machine learning to train
 
     ![Screenshot of the feature importance chart on the Explanations tab.](media/use-automated-machine-learning/feature-importance1.png)
 
-## Task 6: Deploy a predictive service
+### Task 6: Deploy a predictive service
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), on the **Automated ML** page, select your automated machine learning job.
 
@@ -215,7 +215,7 @@ Follow the next steps to run a job that uses automated machine learning to train
 
     ![Screenshot of location of Endpoints on the left hand menu.](media/endpoints1-02.png)
 
-## Task 7: Test the deployed service
+### Task 7: Test the deployed service
 
 Now you can test your deployed service.
 
