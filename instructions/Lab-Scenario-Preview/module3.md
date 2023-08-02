@@ -10,7 +10,7 @@ In this lab, you'll use a simple command-line application to see the Computer Vi
   
 After completing this lab, you will be able to:
 
-- Create Azure Cognitive Services and Azure Storage Account.
+- Create Azure Cognitive Services.
 - Configure and run a client application.
 
 ## Architecture Diagram
