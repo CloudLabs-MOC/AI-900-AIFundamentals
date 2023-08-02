@@ -15,4 +15,4 @@ After completing this lab, you will be able to:
 
 ## Architecture Diagram
 
-   ![](media/Module5.png)
+   ![](media/ai-900-mod5.png)
