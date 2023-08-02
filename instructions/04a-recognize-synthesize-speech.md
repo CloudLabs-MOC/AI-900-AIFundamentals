@@ -6,6 +6,8 @@ For example, suppose you want to create a smart device that can respond verbally
 
 To test the capabilities of the Speech service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
+## Exercise 1: Create a Cognitive Services resource
+
 ## Task 1: Create a Cognitive Services resource
 
 1. Click the **&#65291;Create a resource** button, search for *Cognitive Services*, and create a **Cognitive Services** resource with the following settings:
