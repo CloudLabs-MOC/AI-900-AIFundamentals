@@ -10,7 +10,7 @@ In this lab, you will test the capabilities of of the Face service, we'll use a 
   
 After completing this lab, you will be able to:
 
-- Create a Face API resource and a Azure Storage Account.
+- Create a Face API resource.
 - Configure and run a client application.
 
 ## Architecture Diagram
