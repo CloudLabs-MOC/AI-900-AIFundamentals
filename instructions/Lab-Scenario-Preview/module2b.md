@@ -12,4 +12,4 @@ After completing this lab, you will be able to create an Azure Machine Learning 
 
 ## Architecture Diagram
 
- ![](media/Module2b.png)
+ ![](media/ai-900-2b.png)

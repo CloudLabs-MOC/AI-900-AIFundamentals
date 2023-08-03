@@ -12,4 +12,4 @@ After completing this lab, you will be able to create a Cognitive Services resou
 
 ## Architecture Diagram
 
-  ![](media/Module3e.png)
+  ![](media/3e-ai-900.png)

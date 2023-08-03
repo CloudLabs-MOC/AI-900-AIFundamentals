@@ -6,6 +6,8 @@ In Azure, you can use the ***Custom Vision*** cognitive service to train an imag
 
 To test the capabilities of the Custom Vision service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or mobile apps.
 
+## Exercise 1: Create a *Cognitive Services* resource
+
 ## Task 1: Create a Cognitive Services resource
 
 You can use the Custom Vision service by creating either a **Custom Vision** resource or a **Cognitive Services** resource.
