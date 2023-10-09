@@ -215,7 +215,7 @@ To apply your data transformations, you must run the pipeline.
 
     ![Screenshot of designer asset library with the completed job and job details button below.](media/completed-job-2c.png)
 
-    >**Note**: Notice that the left hand panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Completed**. 
+    >**Note**: Notice that the left hand panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Completed**.  Once the job is complete, the dataset is now prepared for model training.
 
 1. When the run has completed, click on **Job detail**. A new tab will open, and you will see the components that have completed with check marks like this:
 
