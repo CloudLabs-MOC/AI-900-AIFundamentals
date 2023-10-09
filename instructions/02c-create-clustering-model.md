@@ -194,7 +194,7 @@ Network](https://lternet.edu/).
 
     ![Screenshot of location of designer asset library, search bar, and data icon.](media/create-classification-model/search-data.png)
 
-1. Click on **Data**. Search for and place the **penguin-data** dataset onto the canvas.
+1. Select **Data**, Search for and place the **penguin-data** dataset onto the canvas.
 
 1. Click on **penguin-data** then click on **Use Data**
 
@@ -217,11 +217,11 @@ Network](https://lternet.edu/).
     - There are two missing values in the **CulmenLength** column (the **CulmenDepth**, **FlipperLength**, and **BodyMass** columns also have two missing values).
     - The measurement values are in different scales (from tens of millimeters to thousands of grams).
 
-1. Close the dataset visualization so you can see the dataset on the pipeline canvas.
+1. Close the **DataOutput** so you can see the dataset on the pipeline canvas.
 
 ### Task 6: Apply transformations
 
-1. In the **Asset library** pane on the left, click on **Component**, which contains a wide range of modules you can use for data transformation and model training. You can also use the search bar to quickly locate modules.
+1. In the **Asset library** pane on the left, Select **Component** ( which contains a wide range of modules you can use for data transformation and model training). You can also use the search bar to quickly locate modules.
 
     ![Screenshot of location of designer asset library, search bar, and components icon.](media/create-classification-model/search-component.png))
 
@@ -233,7 +233,7 @@ Network](https://lternet.edu/).
 
     ![Screenshot of how to include the column names CulmenLength, CulmenDepth, FlipperLength, and BodyMass.](media/select-columns-2c.png)
 
-1. Save and Close the **Select Columns in a Dataset** module settings to return to the designer canvas.
+1. Select **Save** and **Close** the **Select Columns in a Dataset** menu to return to the designer canvas.
 
 1. In the **Asset library**, search for a **Clean Missing Data** module and place it onto the canvas, below the **Select columns in a dataset** module and connect them like this:
 
