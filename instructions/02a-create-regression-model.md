@@ -215,19 +215,19 @@ To apply your data transformations, you must run the pipeline.
 
     ![Screenshot of designer asset library with the completed job and job details button below.](media/completed-job-2c.png)
 
-    >**Note**: Notice that the left hand panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Completed**. 
+    >**Note**: Notice that the left hand panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Completed**.  Once the job is complete, the dataset is now prepared for model training.
 
 1. When the run has completed, click on **Job detail**. A new tab will open, and you will see the components that have completed with check marks like this:
 
     ![Screenshot of dataset with modules in completed job state.](media/normalize-complete-2a.png)
 
-    >**Note**: The dataset is now prepared for model training. Close the Job detail tab to return to the pipeline.
+1. Go to the left-hand menu. Under **Authoring** select **Designer**. Then select your **Auto Price Training** pipeline from the list of **Pipelines**.
 
 ### Task 7: Create training pipeline
 
 After you've used data transformations to prepare the data, you can use it to train a machine learning model. Work through the following steps to extend the **Auto Price Training** pipeline.
 
-1. Return to the **Auto Price Training** pipeline you created in the previous unit if it's not already open.
+1. Make sure the left-hand menu has **Designer** selected and that you have returned to the **Auto Price Training** pipeline.
 
 1. In the **Asset library** pane on the left, search for and place a **Split Data** module onto the canvas under the **Normalize Data** module. Then connect the *Transformed Dataset* (left) output of the **Normalize Data** module to the input of the **Split Data** module.
 
@@ -364,6 +364,8 @@ One way to evaluate a regression model is to compare the predicted labels to the
                                 inplace=True)
             return scored_results
         ```
+
+    >**Note**: Copy and pasting may introduce spaces into the Python script that should not be there. Double check that there is not a space before *import* or *def* or *return*. Make sure there is one tab indent before *scored_results* and *scored_results.rename()*
 
 1. Connect the output from the **Score Model** module to the **Dataset1** (left-most) input of the **Execute Python Script**, and connect the left output(Result Dataset) of the **Execute Python Script** module to the (output data) of the **Web Service Output**.
 
