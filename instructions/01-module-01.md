@@ -42,6 +42,8 @@ Before using the studio, you need to associate an Azure AI services resource wit
     - **Region**: *Choose any available region*.
     - **Name**: *Enter a unique name*.
     - **Pricing tier**: Free F0
+  
+      <img src ="https://github.com/CloudLabs-MOC/AI-900-AIFundamentals/assets/95687117/89f14445-985c-40d8-837c-8a70cb9d991f"> 
 
 1. Select **Review + Create** and review the configuration. Then select **Create**. The screen will indicate when the deployment is complete. 
 
@@ -49,13 +51,17 @@ Before using the studio, you need to associate an Azure AI services resource wit
 
 1. When the deployment is complete, open up a new tab and return to the [Content Safety Studio](https://contentsafety.cognitive.azure.com?azure-portal=true). 
 
-2. Select the **Settings** icon on the top right of the screen again. This time you should see that your newly created resource has been added to the list.  
+2. Select the **Settings** icon on the top right of the screen again. This time you should see that your newly created resource has been added to the list.
+   
+ <img src ="https://github.com/CloudLabs-MOC/AI-900-AIFundamentals/assets/95687117/38a0bca4-a3b4-465b-ac00-0880757d39eb"> 
 
-3. On the Content Safety Studio's Settings page, select the Azure AI service resource you just created and click **Use resource** on the bottom of the screen. You will be taken back to the studio home page. Now you can begin using the studio with your newly created resource.
+4. On the Content Safety Studio's Settings page, select the Azure AI service resource you just created and click **Use resource** on the bottom of the screen. You will be taken back to the studio home page. Now you can begin using the studio with your newly created resource.
 
 ## Try out text moderation in the Content Safety Studio
 
 1. On the Content Safety Studio home page, under *Run moderation tests*, navigate to the **Moderate text content** box and click **Try it out**.
+<img src ="https://github.com/CloudLabs-MOC/AI-900-AIFundamentals/assets/95687117/83ec5ed9-e3c5-4f67-ab6c-d3f70775f781"> 
+
 2. Under run a simple test, click **Safe Content**. Notice that text is displayed in the box below. 
 3. Click **Run test**. Running a test calls the Content Safety Service's deep learning model. The deep learning model has already been trained to recognize un-safe content.
 4. In the *Results* panel, inspect the results. There are four severity levels from safe to high, and four types of harmful content. Does the Content Safety AI service consider this sample to be acceptable or not? What's important to note is that the results are within a confidence interval. A well-trained model, like one of Azure AI's out-of-the-box models, can return results that have a high probability of matching what a human would label the result. Each time you run a test, you call the model again. 
