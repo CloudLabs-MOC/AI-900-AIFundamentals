@@ -214,5 +214,5 @@ This simple app shows only some of the capabilities of the Language service. To 
 ### Review
 In this lab, you have completed:
 -  Create a Cognitive Services resource
-- 
+
 ## You have successfully completed this lab.

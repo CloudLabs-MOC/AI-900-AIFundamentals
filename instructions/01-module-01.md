@@ -1,170 +1,74 @@
-# Module 01: Explore Cognitive Services
+# Module 01: Explore Azure AI services
 
-## Lab overview
+> **Important**
+> **The Anomaly Detector lab has been deprecated and replaced by the update below.**
 
-Azure Cognitive Services encapsulate common AI functionality that can be categorized into four main pillars: vision, speech, language, and decision services. In this exercise, you will take a look at one of the decision services to get a general sense of how to provision and use a cognitive services resource in a software application.
+Azure AI services help users create AI applications with out-of-the-box and pre-built and customizable APIs and models. In this exercise you will take a look at one of the services, Azure AI Content Safety, in the Content Safety Studio. 
 
-The specific cognitive service you will explore in this exercise is **Anomaly Detector**. Anomaly Detector is used to analyze data values over time and to detect any unusual values that might indicate a problem or an issue for further investigation. For example, a sensor in a temperature-controlled storage facility might monitor the temperature every minute and log the measured values. You can use the Anomaly Detector service to analyze the logged temperature values and flag any that fall significantly outside of the normal range of expected temperatures.
+The Content Safety Studio enables you to explore how text and image content can be moderated. You can run tests on sample text or images and get a severity score ranging from safe to high for each category. In this lab exercise you will create a single-service resource in the Content Safety Studio and test its functionalities. 
 
-To test the capabilities of the Anomaly Detection service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply to real-world solutions, such as websites or phone apps.
+> **Note**
+> The goal of this exercise is to get a general sense of how Azure AI services are provisioned and used. Content Safety is used as an example, but you are not expected to gain a comprehensive knowledge of content safety in this exercise!
 
-> **Note**: The goal of this exercise is to get a general sense of how cognitive services are provisioned and used. Anomaly Detector is used as an example, but you are not expected to gain a comprehensive knowledge of anomaly detection in this exercise!
+## Navigate the Content Safety Studio 
+<img src ="https://github.com/CloudLabs-MOC/AI-900-AIFundamentals/assets/95687117/86fcbdb7-41b3-4652-88fe-2f293581798d">
 
-## Lab objective
-  
-In this lab, you will perform:
 
-+ Create an Anomaly Detector resource
+1. Open the [Content Safety Studio](https://contentsafety.cognitive.azure.com?azure-portal=true). If you are not logged in, you will need to sign in. Select **Sign In** on the top right of the screen. Use the email and password associated with your Azure subscription to sign in. 
 
-## Estimated timing: 60 minutes
+2. The Content Safety Studio is set up like many other studios for Azure AI services. On the menu at the top of the screen, click on the icon on the left of *Azure AI*. You will see a drop-down list of other studios designed for development with Azure AI services. You can click on the icon again to hide the list.
 
-## Architecture Diagram
+<img src ="https://github.com/CloudLabs-MOC/AI-900-AIFundamentals/assets/95687117/3806d9ef-1cb1-45b7-8b63-ae5d8226b27e">  
 
-  ![](media/Module1.1.png)
+## Associate a resource with the studio 
 
-## Exercise 1: Create an Anomaly Detector resource
 
-### Task 1: Create an Anomaly Detector resource
+Before using the studio, you need to associate an Azure AI services resource with the studio. Depending on the studio, you may find you need a specific single-service resource, or can use a general multi-service resource. In the case of the Content Safety Studio, you can use the service by creating a single-service *Content Safety* resource or *Azure AI services* general multi-service resource. In the steps below, we will create a single-service Content Safety resource. 
 
-Let us start by creating an **Anomaly Detector** resource in your Azure subscription:
+1. On the top right of the screen, click on the **Settings** icon. 
 
-1. In the Azure Portal click the **&#65291;Create a resource** button.
+<img src ="https://github.com/CloudLabs-MOC/AI-900-AIFundamentals/assets/95687117/9ccc532e-6ab6-4ea9-854d-b3462de6a05b">  
 
-   ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img1.png)
-   
-1. In the Marketplace page search for **Anomaly Detector (1)** and Select **Anomaly Detector (2)**
-   
-    ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img2.png)
-    
-1. On Anomaly Detector Page Click on **Create**. 
+2. On the **Settings** page, you will see a *Directory* tab and *Resource* tab. On the *Resource* tab, select **Create a new resource**. This takes you to page to create a resource in the Azure Portal.
 
-     ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img3.png)
-     
-1. Create an **Anomaly Detector** resource with the following settings:
-     
-    - **Subscription**: Use existing subscription **(1)**
-    - **Resource group**: Select **AI-900-Module-01-<inject key="DeploymentID" enableCopy="false"/> (2)**
-    - **Region**: Select **<inject key="location" enableCopy="false"/> (3)**
-    - **Name**: Enter **myanomalydetector-<inject key="DeploymentID" enableCopy="false"/> (4)**
-    - **Pricing tier**: Standard S0 **(5)**
-    - Click **Review + create (6)** 
+> **Note**
+> The *Directory* tab allows users to select different directories from which to create resources. You do not need to change its settings unless you wish to use a different directory. 
 
-       ![Picture1](media/ai900mod1img4-new.png)
-      
-1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page.
-   
-1. Wait for deployment to complete, and then click on the **Go to resource** button, this will take you to your Anomaly Detector resource.
+<img src ="https://github.com/CloudLabs-MOC/AI-900-AIFundamentals/assets/95687117/eed82272-c68d-4557-abeb-3723346b9e2d"> 
 
-1. View the **Keys and Endpoint** page for your Anomaly Detector resource. 
-   
-     ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img5.png)
-   
-      >**Note**: Copy and save the **KEY 1** and **Endpoint** value to NotePad for future reference to connect from client applications. 
+1. On the *Create Content Safety* page in the [Azure Portal](https://portal.azure.com?auzre-portal=true), you need to configure several details to create your resource. Configure it with the following settings:
+    - **Subscription**: *Your Azure subscription*.
+    - **Resource group**: *Select or create a resource group with a unique name*.
+    - **Region**: *Choose any available region*.
+    - **Name**: *Enter a unique name*.
+    - **Pricing tier**: Free F0
 
-### Task 2: Run Cloud Shell
+1. Select **Review + Create** and review the configuration. Then select **Create**. The screen will indicate when the deployment is complete. 
 
-To test the capabilities of the Anomaly Detector service, we'll use a simple command-line application that runs in the Cloud Shell on Azure.
+*Congrats! You've just created, or provisioned, an Azure AI services resource. The one you provisioned in particular is a single-service Content Safety service resource.*
 
-1. In the Azure portal, select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal.
+1. When the deployment is complete, open up a new tab and return to the [Content Safety Studio](https://contentsafety.cognitive.azure.com?azure-portal=true). 
 
-     ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/powershell-portal-guide-1.png)
+2. Select the **Settings** icon on the top right of the screen again. This time you should see that your newly created resource has been added to the list.  
 
-1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.  
+3. On the Content Safety Studio's Settings page, select the Azure AI service resource you just created and click **Use resource** on the bottom of the screen. You will be taken back to the studio home page. Now you can begin using the studio with your newly created resource.
 
-     ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img6.png)
- 
-1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected and click on **Show advanced settings**.
+## Try out text moderation in the Content Safety Studio
 
-     ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img7.png)
- 
-1. Please make sure you have selected your resource group **AI-900-Module-01-<inject key="DeploymentID" enableCopy="false"/> (1)** and enter **blob<inject key="DeploymentID" enableCopy="false"/> (2)** for the **Storage account Name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/> (3)** for the **File share Name**, then click on **Create Storage (4)**.
+1. On the Content Safety Studio home page, under *Run moderation tests*, navigate to the **Moderate text content** box and click **Try it out**.
+2. Under run a simple test, click **Safe Content**. Notice that text is displayed in the box below. 
+3. Click **Run test**. Running a test calls the Content Safety Service's deep learning model. The deep learning model has already been trained to recognize un-safe content.
+4. In the *Results* panel, inspect the results. There are four severity levels from safe to high, and four types of harmful content. Does the Content Safety AI service consider this sample to be acceptable or not? What's important to note is that the results are within a confidence interval. A well-trained model, like one of Azure AI's out-of-the-box models, can return results that have a high probability of matching what a human would label the result. Each time you run a test, you call the model again. 
+5. Now try another sample. Select the text under Violent content with misspelling. Check that the content is displayed in the box below.
+6. Click **Run test** and inspect the results in the Results panel again. 
 
-      ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img8.png)
+You can run tests on all the samples provided, then inspect the results.
 
-1. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu.
+## Check out the keys and endpoint
 
-      ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img9.png)
+These capabilities you tested can be programmed into all sorts of applications. The keys and endpoint used for application development can be found both in the Content Safety Studio and the Azure Portal. 
 
-1. Wait for PowerShell to start. You should see the following screen in the Azure portal:  
+1. In the Content Safety Studio, navigate back to the **Settings** page, with the *Resources* tab selected. Look for the resource you used. Scroll across to see the endpoint and key for your resource. 
+1. In the Azure Portal, you will see that these are the *same* endpoint and *different* keys for your resource. To check it out, head to the [Azure Portal](https://portal.azure.com?auzre-portal=true). Search for *Content Safety* on the top search bar. Find your resource and click on it. On the left-hand menu, look under *Resource Management* for *Keys and Endpoints*. Select **Keys and Endpoints** to view the endpoint and keys for your resource. 
 
-    ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img10.png)
-     
-### Task 3: Configure and run a client application
-
-Now that you have a Cloud Shell environment, you can run a simple application that uses the Anomaly Detector service to analyze data.
-
-1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
-
-    ```PowerShell
-    git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
-    ```
-    
-    >**Note**: To Paste the Code right click inside the cloud Shell and then Click on Paste.
-
-1. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell:
-
-     ```PowerShell
-    code .
-    ```
-    
-    Notice how this opens an editor like the one in the image below: 
-
-     ![The code editor.](media/powershell-portal-guide4c.png)
-
-1. In the **Files** pane on the left, expand **ai-900 (1)** and select **detect-anomalies.ps1 (2)**. This file contains some code that uses the Anomaly Detection service, as shown here:
-
-    ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img11.png)
-
-1. Don't worry too much about the details of the code, the important thing is that it needs the endpoint URL and either of the keys for your Anomaly Detector resource. Copy these from the **Keys and Endpoints** page for your resource (Exercise 1, Task 1, Step 7) and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *Endpoint* placeholder values, respectively.
-
-    > **Tip**: You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
-    
-    ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img5.png)
-  
-    After pasting the key and endpoint values, the first two lines of code should look similar to this:
-
-    
-     > $key="1a2b3c4d5e6f7g8h9i0j...."    
-     > $endpoint="https..."
-
-   
-    
-    ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img12.png)
-
-1. Click at the top right of the editor pane **(1)**, use the button to open the menu, and select **Save (2)** to save your changes. Then open the menu again and select **Close Editor (3)**.
-
-      ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img13.png)
-      
-      >**Note**: If you will be not able to find this option, you can use also Shortcut Keys **Ctrl + S** to save and **Ctrl + Q** to close the editor.
-      
-      >**Note**: Remember, anomaly detection is an artificial intelligence technique used to determine whether values in a series are within expected parameters. The sample client application will use your Anomaly Detector service to analyze a file containing a series of date/times and numeric values. The application should return results indicating at each time point, whether the numeric value is within expected parameters.
-
-1. In the PowerShell pane, enter the following commands to run the code:
-
-    ```PowerShell
-    cd ai-900
-    ```
-    ```PowerShell
-    .\detect-anomalies.ps1
-    ```
-
-1. Review the results, noting that the final column in the results is **True** or **False** to indicate if the value recorded at each date/time is considered an anomaly or not. Consider how we could use this information in a real-life situation. What action could the application trigger if the values were of fridge temperature or blood pressure and anomalies were detected?
-     
-      ![Picture1](media/Ai900-mod1-img9.png)
-      
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
-   > - Hit the Validate button for the corresponding task.
-   > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-## Learn more
-
-This simple app shows only some of the capabilities of the Anomaly Detector service. To learn more about what you can do with this service, see the [Anomaly Detector page](https://learn.microsoft.com/en-us/azure/cognitive-services/anomaly-detector/overview).
-
-### Review
-In this lab, you have completed:
-
-- Create an Anomaly Detector resource
- 
-## You have successfully completed this lab.
+After you have finished, you can delete the Content Safety resource from the Azure Portal. Deleting the resource is a way to reduce costs that accrue when the resource exists in the subscription. To do this, navigate to the **Overview** page of your Content Safety resource. Select **Delete** at the top of the screen. 
