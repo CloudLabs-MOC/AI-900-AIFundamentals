@@ -423,6 +423,8 @@ After you've created and tested an inference pipeline for real-time inferencing,
 
 1. Wait for the service to be deployed - this can take upto **30 minutes** to get the deployment state to **Healthy**. The deployment status is shown at the top left of the designer interface.
 
+   >**Note**: You can also monitor deployment status by navigating to **Endpoint** from left navigation pane.
+
 ### Task 13: Test the service
 
 1. On the **Endpoints** page, open the **predict-auto-price** real-time endpoint.
