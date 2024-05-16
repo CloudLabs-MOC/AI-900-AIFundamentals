@@ -22,7 +22,7 @@ In this lab, you will perform:
 
 ### Task 1: Create an Azure Machine Learning workspace  
 
-1. Select **+ Create a resource**, search for Machine Learning.
+1. Select **+ Create a resource**, search for azure Machine Learning.
 
      ![Picture1](media/ai900mod1img1.png)
 
@@ -53,10 +53,12 @@ In this lab, you will perform:
 
 1. Select **Launch studio** (or open a new browser tab and navigate to [https://ml.azure.com](https://ml.azure.com?azure-portal=true), and sign into Azure Machine Learning studio using your Microsoft account).
 
-1. In Azure Machine Learning studio, you should see your newly created workspace **AI-900-Workspace-<inject key="DeploymentID" enableCopy="false" />**. If that is not the case, select your Azure directory in the left-hand menu. Then from the new left-hand menu select **Workspaces**, where all the workspaces associated to your directory are listed, and select the one you created for this exercise.
+1. In Azure Machine Learning studio, you should see your newly created workspace **AI-900-Workspace-<inject key="DeploymentID" enableCopy="false" />**. If that is not the case, select your **Azure directory** or  select **<- All workspaces** in the left-hand menu. Then from the new left-hand menu select **Workspaces**, where all the workspaces associated to your directory are listed, and select the one you created for this exercise.
 
     ![Picture1](media/ai900mod2cimg4.png)
-   
+
+    <validation step ="e3d0524d-252d-46a5-a588-2af2be34b107" />
+    
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
     > - Hit the Validate button for the corresponding task.
@@ -96,6 +98,8 @@ In this lab, you will perform:
      Alternatively, ask your Azure administrator to extend your quota.
 
    > **Note**: The compute cluster will take some time to be created. You can move onto the next task while it's being created.
+
+   <validation step ="8dccb048-3b22-4885-99a4-8c2f72290fbb" />
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
@@ -204,7 +208,7 @@ To apply your data transformations, you must run the pipeline.
 
     ![Screenshot of dataset with data transformation modules.](media/data-transforms-2a.png)
 
-1. Select **Review + Submit**, and create a new experiment, on the basics page enter New experiment name as **mslearn-auto-training**  and enter Job display name as **Auto Price Training**.
+1. Select **Configure + Submit**, and create a new experiment, on the basics page select **Create new** and enter New experiment name as **mslearn-auto-training**  and enter Job display name as **Auto Price Training** then **click on **Next** twice.
 
    ![Picture1](media/submit1.png)
 
@@ -212,7 +216,7 @@ To apply your data transformations, you must run the pipeline.
 
    ![Picture1](media/submit2.png)
 
-1. Then review and **Submit**.
+1. Then **Review + Submit** and **Submit**.
 
     ![Picture1](media/submit3.png)
 
@@ -231,6 +235,8 @@ To apply your data transformations, you must run the pipeline.
 After you've used data transformations to prepare the data, you can use it to train a machine learning model. Work through the following steps to extend the **Auto Price Training** pipeline.
 
 1. Return to the **Auto Price Training** pipeline you created in the previous unit if it's not already open.
+
+    >**Note**: You can find **Auto Price Training** by selecting **designer** under Authoring section from left navigation pane.
 
 1. In the **Asset library** pane on the left, search for and place a **Split Data** module onto the canvas under the **Normalize Data** module. Then connect the *Transformed Dataset* (left) output of the **Normalize Data** module to the input of the **Split Data** module.
 
@@ -267,7 +273,7 @@ After you've used data transformations to prepare the data, you can use it to tr
 
 Now you're ready to run the training pipeline and train the model.
 
-1. Select **Review + Submit**, and run the pipeline using the existing experiment named **mslearn-auto-training**. Review and then click on **Submit**.
+1. Select **Configure + Submit**, and run the pipeline using the existing experiment named **mslearn-auto-training**. Review and then click on **Review + Submit** and **Submit**.
 
 1. The experiment run will take 5 minutes or more to complete. When the experiment run has completed, click on **view details**. You will be taken to a new tab.
 
@@ -293,7 +299,7 @@ One way to evaluate a regression model is to compare the predicted labels to the
 
     ![Screenshot of adding the Evaluate Model module to Score Model module.](media/evaluate-2a.png)
 
-1. Select **Review + Submit**, and run the pipeline using the existing experiment named **mslearn-auto-training**.  Review and then click on **Submit**.
+1. Select **Configure + Submit**, and run the pipeline using the existing experiment named **mslearn-auto-training**.  Review and then click on **Review + Submit** and **Submit**.
 
 1. Wait for the experiment run to complete.
 
@@ -336,7 +342,7 @@ One way to evaluate a regression model is to compare the predicted labels to the
 
       >**Note**: Use the image for reference as you modify the pipeline in the next steps.
 
-1. The inference pipeline assumes that new data will match the schema of the original training data, so the **Automobile price data (Raw)** dataset from the training pipeline is included. However, this input data includes the **price** label that the model predicts, which is unintuitive to include in new car data for which a price prediction hasn't yet been made. Delete this module and replace it with an **Enter Data Manually** module from the **Data Input and Output** section, containing the following CSV data, which includes feature values without labels for three cars (copy and paste the entire block of text):
+1. The inference pipeline assumes that new data will match the schema of the original training data, so the **Automobile price data (Raw)** dataset from the training pipeline is included. However, this input data includes the **price** label that the model predicts, which is unintuitive to include in new car data for which a price prediction hasn't yet been made. Delete the **Automobile price data (Raw)** module and replace it with an **Enter Data Manually** module. To do this, search for the module in the **Asset Library**, add it to your workspace, then double click then from the **Data Input and Output** section, containing the following CSV data, which includes feature values without labels for three cars (copy and paste the entire block of text):
 
    ```CSV
     symboling,normalized-losses,make,fuel-type,aspiration,num-of-doors,body-style,drive-wheels,engine-location,wheel-base,length,width,height,curb-weight,engine-type,num-of-cylinders,engine-size,fuel-system,bore,stroke,compression-ratio,horsepower,peak-rpm,city-mpg,highway-mpg
@@ -384,6 +390,8 @@ One way to evaluate a regression model is to compare the predicted labels to the
    
    > **Note**: The realtime endpoint may be in unhealthy state, wait for another 30 minutes for the endpoint state to change the deployment state to **Healthy**, or else perform the steps from Task.
 
+   <validation step ="fd1ed6e9-b3d7-4f58-abe1-59004fe56ce4" />
+
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
    > - Hit the Validate button for the corresponding task.
@@ -414,6 +422,8 @@ After you've created and tested an inference pipeline for real-time inferencing,
     ![Picture1](media/deploy.png)
 
 1. Wait for the service to be deployed - this can take upto **30 minutes** to get the deployment state to **Healthy**. The deployment status is shown at the top left of the designer interface.
+
+   >**Note**: You can also monitor deployment status by navigating to **Endpoint** from left navigation pane.
 
 ### Task 13: Test the service
 
@@ -472,6 +482,7 @@ After you've created and tested an inference pipeline for real-time inferencing,
 
    >**Note**: You also tested a service that is ready to be connected to a client application using the credentials in the **Consume** tab. We will end the lab here. You are welcome to continue to experiment with the service you just deployed.
 
+   <validation step ="a4859f55-811d-479d-81d2-47052b795ae3" />
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
    > - Hit the Validate button for the corresponding task.
