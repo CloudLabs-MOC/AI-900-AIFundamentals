@@ -204,7 +204,7 @@ To apply your data transformations, you must run the pipeline.
 
     ![Screenshot of dataset with data transformation modules.](media/data-transforms-2a.png)
 
-1. Select **Review + Submit**, and create a new experiment, on the basics page enter New experiment name as **mslearn-auto-training**  and enter Job display name as **Auto Price Training**.
+1. Select **Configure + Submit**, and create a new experiment, on the basics page enter New experiment name as **mslearn-auto-training**  and enter Job display name as **Auto Price Training**.
 
    ![Picture1](media/submit1.png)
 
