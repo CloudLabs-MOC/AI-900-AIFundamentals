@@ -267,7 +267,7 @@ After you've used data transformations to prepare the data, you can use it to tr
 
 Now you're ready to run the training pipeline and train the model.
 
-1. Select **Review + Submit**, and run the pipeline using the existing experiment named **mslearn-auto-training**. Review and then click on **Submit**.
+1. Select **Configure + Submit**, and run the pipeline using the existing experiment named **mslearn-auto-training**. Review and then click on **Submit**.
 
 1. The experiment run will take 5 minutes or more to complete. When the experiment run has completed, click on **view details**. You will be taken to a new tab.
 
