@@ -212,7 +212,7 @@ To apply your data transformations, you must run the pipeline.
 
    ![Picture1](media/submit2.png)
 
-1. Then review and **Submit**.
+1. Then **Review + Submit** and **Submit**.
 
     ![Picture1](media/submit3.png)
 
@@ -267,7 +267,7 @@ After you've used data transformations to prepare the data, you can use it to tr
 
 Now you're ready to run the training pipeline and train the model.
 
-1. Select **Configure + Submit**, and run the pipeline using the existing experiment named **mslearn-auto-training**. Review and then click on **Submit**.
+1. Select **Configure + Submit**, and run the pipeline using the existing experiment named **mslearn-auto-training**. Review and then click on **Review + Submit** and **Submit**.
 
 1. The experiment run will take 5 minutes or more to complete. When the experiment run has completed, click on **view details**. You will be taken to a new tab.
 
@@ -293,7 +293,7 @@ One way to evaluate a regression model is to compare the predicted labels to the
 
     ![Screenshot of adding the Evaluate Model module to Score Model module.](media/evaluate-2a.png)
 
-1. Select **Review + Submit**, and run the pipeline using the existing experiment named **mslearn-auto-training**.  Review and then click on **Submit**.
+1. Select **Configure + Submit**, and run the pipeline using the existing experiment named **mslearn-auto-training**.  Review and then click on **Review + Submit** and **Submit**.
 
 1. Wait for the experiment run to complete.
 
