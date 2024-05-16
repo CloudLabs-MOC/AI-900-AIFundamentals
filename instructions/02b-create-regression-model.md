@@ -236,6 +236,8 @@ After you've used data transformations to prepare the data, you can use it to tr
 
 1. Return to the **Auto Price Training** pipeline you created in the previous unit if it's not already open.
 
+    >**Note**: You can find **Auto Price Training** by selecting **designer** under Authoring section from left navigation pane.
+
 1. In the **Asset library** pane on the left, search for and place a **Split Data** module onto the canvas under the **Normalize Data** module. Then connect the *Transformed Dataset* (left) output of the **Normalize Data** module to the input of the **Split Data** module.
 
     >**Tip**: Use the search bar to quickly locate modules. 
@@ -340,7 +342,7 @@ One way to evaluate a regression model is to compare the predicted labels to the
 
       >**Note**: Use the image for reference as you modify the pipeline in the next steps.
 
-1. The inference pipeline assumes that new data will match the schema of the original training data, so the **Automobile price data (Raw)** dataset from the training pipeline is included. However, this input data includes the **price** label that the model predicts, which is unintuitive to include in new car data for which a price prediction hasn't yet been made. Delete this module and replace it with an **Enter Data Manually** module and double click then from the **Data Input and Output** section, containing the following CSV data, which includes feature values without labels for three cars (copy and paste the entire block of text):
+1. The inference pipeline assumes that new data will match the schema of the original training data, so the **Automobile price data (Raw)** dataset from the training pipeline is included. However, this input data includes the **price** label that the model predicts, which is unintuitive to include in new car data for which a price prediction hasn't yet been made. Delete the **Automobile price data (Raw)** module and replace it with an **Enter Data Manually** module. To do this, search for the module in the **Asset Library**, add it to your workspace, then double click then from the **Data Input and Output** section, containing the following CSV data, which includes feature values without labels for three cars (copy and paste the entire block of text):
 
    ```CSV
     symboling,normalized-losses,make,fuel-type,aspiration,num-of-doors,body-style,drive-wheels,engine-location,wheel-base,length,width,height,curb-weight,engine-type,num-of-cylinders,engine-size,fuel-system,bore,stroke,compression-ratio,horsepower,peak-rpm,city-mpg,highway-mpg
