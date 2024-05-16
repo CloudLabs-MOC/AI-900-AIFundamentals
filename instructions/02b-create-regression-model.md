@@ -56,7 +56,9 @@ In this lab, you will perform:
 1. In Azure Machine Learning studio, you should see your newly created workspace **AI-900-Workspace-<inject key="DeploymentID" enableCopy="false" />**. If that is not the case, select your **Azure directory** or  select **<- All workspaces** in the left-hand menu. Then from the new left-hand menu select **Workspaces**, where all the workspaces associated to your directory are listed, and select the one you created for this exercise.
 
     ![Picture1](media/ai900mod2cimg4.png)
-   
+
+    <validation step ="e3d0524d-252d-46a5-a588-2af2be34b107" />
+    
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
     > - Hit the Validate button for the corresponding task.
@@ -96,6 +98,8 @@ In this lab, you will perform:
      Alternatively, ask your Azure administrator to extend your quota.
 
    > **Note**: The compute cluster will take some time to be created. You can move onto the next task while it's being created.
+
+   <validation step ="8dccb048-3b22-4885-99a4-8c2f72290fbb" />
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
@@ -384,6 +388,8 @@ One way to evaluate a regression model is to compare the predicted labels to the
    
    > **Note**: The realtime endpoint may be in unhealthy state, wait for another 30 minutes for the endpoint state to change the deployment state to **Healthy**, or else perform the steps from Task.
 
+   <validation step ="fd1ed6e9-b3d7-4f58-abe1-59004fe56ce4" />
+
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
    > - Hit the Validate button for the corresponding task.
@@ -472,6 +478,7 @@ After you've created and tested an inference pipeline for real-time inferencing,
 
    >**Note**: You also tested a service that is ready to be connected to a client application using the credentials in the **Consume** tab. We will end the lab here. You are welcome to continue to experiment with the service you just deployed.
 
+   <validation step ="a4859f55-811d-479d-81d2-47052b795ae3" />
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
    > - Hit the Validate button for the corresponding task.
