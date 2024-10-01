@@ -91,5 +91,4 @@ Learner Support Contacts:
 Now, click on Next from the lower right corner to move on to the next page.
 
 ![Next](../media/GettingStarted/next.png)
-
 ## Happy Learning!!
