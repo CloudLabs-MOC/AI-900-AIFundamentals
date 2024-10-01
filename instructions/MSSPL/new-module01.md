@@ -78,7 +78,7 @@ This architecture flow demonstrates how various Azure components work together t
 
    > NOTE: Do not enable MFA, select Ask Later.
     
- 1. Now, click on the **Next** from lower right corner to move on next page.
+ 9. Now, click on the **Next** from lower right corner to move on next page.
 
  ## Support Contact
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
@@ -89,5 +89,7 @@ Learner Support Contacts:
 - Live Chat Support: https://cloudlabs.ai/labs-support
 
 Now, click on Next from the lower right corner to move on to the next page.
+
+![Next](../media/GettingStarted/next.png)
 
 ## Happy Learning!!
