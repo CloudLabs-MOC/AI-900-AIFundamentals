@@ -10,9 +10,8 @@ In this lab, you'll explore Azure Machine Learning's capabilities by creating a 
 
 Understand how to create and deploy an Azure Machine Learning workspace, set up compute resources, and create datasets. Gain skills in running automated machine learning jobs, reviewing models, and deploying predictive services. By the end of this lab, you will be able to:
 
-- *Create and Deploy an Azure Machine Learning Workspace*: Learn how to set up a centralized hub for managing machine learning projects, including creating compute resources and datasets.
-
-- *Run and Review Automated Machine Learning Jobs*: Understand how to train multiple models, identify the best one, and review its performance.
+- **Create and Deploy an Azure Machine Learning Workspace**: Learn how to set up a centralized hub for managing machine learning projects, including creating compute resources and datasets.
+- **Run and Review Automated Machine Learning Jobs**: Understand how to train multiple models, identify the best one, and review its performance.
 Deploy and Test Predictive Services: Gain the ability to deploy models as predictive services and test them to ensure they deliver accurate results.
 
 ### Pre-requisites 
