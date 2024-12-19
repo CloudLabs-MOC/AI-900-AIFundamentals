@@ -26,7 +26,7 @@ You can use the Face service by creating a **Face** resource. (Face API is no lo
     - **Name**: Enter **aiface-<inject key="DeploymentID" enableCopy="false"/>**
     - **Pricing tier**: **Standard S0**
 
-1.  Click on **Review and create**.
+1.  Click on **Review + create**.
    
 1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page.
    
@@ -67,7 +67,7 @@ To test the capabilities of the Face service, we'll use a simple command-line ap
     > $endpoint="https..."
     
 
-1. After making the changes to the variables in the code, press **CTRL+S** to save the file. Then press **CTRL+Q** to close the code editor..
+1. After making the changes to the variables in the code, press **CTRL+S** to save the file.
 
     The sample client application will use your Face service to analyze the following image, taken by a camera in the Northwind Traders store:
 
@@ -75,13 +75,11 @@ To test the capabilities of the Face service, we'll use a simple command-line ap
 
 1. In the PowerShell pane, enter the following commands to run the code:
 
-    ```PowerShell
-    cd ai-search
-    ```
-
      ```PowerShell
     ./find-faces.ps1 store-camera-1.jpg
     ```
+
+    >**Note**: Make sure your are in **ai-search** folder if not run **cd ai-search** command to move into the folder.
 
 1. Review the returned information, which includes the location of the face in the image. The location of a face is indicated by the top-left coordinates, and the width and height of a *bounding box*, as shown here:
     

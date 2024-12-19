@@ -23,7 +23,7 @@ You will be able to complete the following tasks:
   - Task 5: Prepare a client application
   - Task 6: Test the client application
 
-### Task 1: Create a Custom Vision project
+## Task 1: Create a Custom Vision project
 
 To train an object detection model, you need to create a Custom Vision project based on your training resource. To do this, you'll use the Custom Vision portal.
 
@@ -50,7 +50,7 @@ To train an object detection model, you need to create a Custom Vision project b
     
 3. Wait for the project to be created and opened in the browser.
 
-### Task 2: Add and tag images
+## Task 2: Add and tag images
 
 To train an object detection model, you need to upload images that contain the classes you want the model to identify, and tag them to indicate bounding boxes for each object instance.
 
@@ -82,7 +82,7 @@ To train an object detection model, you need to upload images that contain the c
 
       ![Picture1](../media/tagged-images-3b.png)
 
-### Task 3: Train and test a model
+## Task 3: Train and test a model
 
 Now that you've tagged the images in your project, you're ready to train a model.
 
@@ -115,7 +115,7 @@ Now that you've tagged the images in your project, you're ready to train a model
 
 5. Then close the **Quick Test** window.
 
-### Task 4: Publish the object detection model
+## Task 4: Publish the object detection model
 
 Now you're ready to publish your trained model and use it from a client application.
 
@@ -125,40 +125,28 @@ Now you're ready to publish your trained model and use it from a client applicat
  
 1. To publish the trained model with the following settings:
     - **Model name**: traffic-safety **(1)**
-    - **Prediction resource**: ****aiservice-<inject key="DeploymentID" enableCopy="false"/> (2)**
+    - **Prediction resource**: **aiservice-<inject key="DeploymentID" enableCopy="false"/> (2)**
     - Click **Publish (3)**
 
-1. After publishing, click the *Prediction URL* (&#127760;) icon to see the information required to use the published model.
-
       ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/azure-ai-search-lab2-2.png)
+
+1. After publishing, click the *Prediction URL* (&#127760;) icon to see the information required to use the published model.
        
 Later, you will need the appropriate URL and Prediction-Key values to get a prediction from an Image URL, so keep this dialog box open and carry on to the next task.
 
-### Task 5: Prepare a client application
+## Task 5: Prepare a client application
 
 To test the capabilities of the Custom Vision service, we'll use a simple command-line application that runs in the cloud shell on Azure.
 
-1. Switch back to the browser tab containing the Azure portal, and select the **Cloud shell** (**[>_]**)  button at the top of the page to the right of the search box. This opens a cloud shell pane at the bottom of the portal.
+1. Switch back to the browser tab containing the Azure portal, where the **Cloud shell** (**[>_]**) is already opened.
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/powershell-portal-guide-1.png)
-
-2. In the command shell, enter the following commands to download the files for this exercise and save them in a folder named **ai-900** (after removing that folder if it already exists)
-
-    ```PowerShell
-    rm -r ai-search -f
-    ```
-    ```PowerShell
-    git clone https://github.com/CloudLabs-MOC/AI-900-AIFundamentals ai-search
-    ```
 
 1. The files are downloaded to a folder named **ai-search**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell:
 
     ```PowerShell
     code .
     ```
-
-    >**Note**: If you get Switch to Classic Cloud Shell, click on **Confirm** and run the previous command again.
-
     Notice how this opens up an editor like the one in the image below:
 
     ![The code editor.](../media/analyze-images-computer-vision-service/powershell-portal-guide-4(2).png)
@@ -183,21 +171,17 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 
 6. After making the changes to the variables in the code, press **CTRL+S** to save the file. 
 
-### Task 6: Test the client application
+## Task 6: Test the client application
 
 Now you can use the sample client application to detect cyclists and pedestrians in images.
-
-1. In the powershell terminal window, enter the following commands to change to the **ai-900** directory and edit the code file for this exercise:
-
-    ```PowerShell
-    cd ai-search
-    ```
 
 1. In the PowerShell pane, enter the following command to run the code:
 
     ```PowerShell
     ./detect-objects.ps1 1
     ```
+
+    >**Note**: Make sure your are in **ai-search** folder if not run **cd ai-search** command to move into the folder.
 
     This code uses your model to detect objects in the following image:
 
