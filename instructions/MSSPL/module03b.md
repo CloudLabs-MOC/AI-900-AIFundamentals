@@ -6,11 +6,11 @@
 
 *Object detection* is a form of computer vision in which a machine learning model is trained to classify individual instances of objects in an image and indicate a *bounding box* that marks its location. You can think of this as a progression from *image classification* (in which the model answers the question, "What is this an image of?") to building solutions where we can ask the model, "What objects are in this image, and where are they?"
 
-For example, a road safety initiative might identify pedestrians and cyclists as being the most vulnerable road users at traffic intersections. By using cameras to monitor intersections, images of road users could be analyzed to detect pedestrians and cyclists in order to monitor their numbers or even change the behavior of traffic signals.
+For example, a road safety initiative might identify pedestrians and cyclists as the most vulnerable road users at traffic intersections. By using cameras to monitor intersections, images of road users could be analyzed to detect pedestrians and cyclists in order to monitor their numbers or even change the behavior of traffic signals.
 
 The **Custom Vision** Azure AI service in Microsoft Azure provides a cloud-based solution for creating and publishing custom object detection models. In Azure, you can use the Custom Vision service to train an object detection model based on existing images. There are two elements to creating an object detection solution. First, you must train a model to detect the location and class of objects using labeled images. Then, when the model is trained, you must publish it as a service that can be consumed by applications.
 
-To test the capabilities of the Custom Vision service to detect objects in images, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply to real-world solutions, such as websites or mobile apps.
+To test the capabilities of the Custom Vision service to detect objects in images, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply to real-world solutions, like websites or mobile apps.
 
 ## Lab Objectives
 
@@ -43,7 +43,7 @@ To train an object detection model, you need to create a Custom Vision project b
     - **Resource**: aiservice-<inject key="DeploymentID" enableCopy="false"/> [SO] **(3)**
     - **Project Types**: Object Detection **(4)**
     - **Domains**: General \[A1] **(5)**
-        >**Note**: Under the **Resource** dropdown if you don't find the resource that you created previously in the Azure portal, kindly refresh the page and reperform the task.
+        >**Note**: Under the **Resource** dropdown if you don't find the resource you created previously in the Azure portal, kindly refresh the page and perform the task again.
     - Click on **Create Project (6)**
 
       ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/azure-ai-search-lab2-1.png)
@@ -62,7 +62,7 @@ To train an object detection model, you need to upload images that contain the c
 
 1. After the images have been uploaded, select the first one to open it.
 
-1. Hold the mouse over any object (cyclist or pedestrian) in the image until an automatically detected region is displayed. Then select the object, and if necessary resize the region to surround it. Alternatively, you can simply drag around the object to create a region.
+1. Hold the mouse over any object (cyclist or pedestrian) in the image until an automatically detected region is displayed. Then, select the object, and if necessary, resize the region to surround it. Alternatively, you can simply drag around the object to create a region.
 
     When the object is tightly selected within the rectangular region, enter the appropriate tag for the object (*Cyclist* or *Pedestrian*) and use the **Tag region** (**+**) button to add the tag to the project.
 
@@ -74,7 +74,7 @@ To train an object detection model, you need to upload images that contain the c
 
     - Some images contain multiple objects, potentially of different types. Tag each one, even if they overlap.
     - After a tag has been entered once, you can select it from the list when tagging new objects.
-    - You can go back and forward through the images to adjust tags.
+    - You can go back and forth through the images to adjust tags.
 
         ![Screenshot of an image with a tagged region in the Image Detaol dialog box.](../media/multiple-objects-3b.png)
 
@@ -90,12 +90,12 @@ Now that you have tagged the images in your project, you are ready to train a mo
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/ai900mod3bimg8.png)
    
-1. Select the **Quick Training** option. Again click **Train**.
+1. Select the **Quick Training** option. Again, click **Train**.
  
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/ai900mod3bimg9.png)
 
   
-    > **Tip**: Training may take several minutes. While you are waiting, check out [Video analytics for smart cities](https://www.microsoft.com/research/video/video-analytics-for-smart-cities/), which describes a real project to use computer vision in a road safety improvement initiative.
+    > **Tip**: Training may take several minutes. While you are waiting, check out [Video analytics for smart-cities](https://www.microsoft.com/research/video/video-analytics-for-smart-cities/), which describes a real project to use computer vision in a road safety improvement initiative.
 
 2. When training is complete, review the *precision*, *recall*, and *mAP* performance metrics. These measure the prediction goodness of the object detection model and should all be reasonably high.
 
@@ -107,17 +107,17 @@ Now that you have tagged the images in your project, you are ready to train a mo
 
       ![Screenshot of performance metrics for a trained model.](../media/quicktest-3b.png)
       
-    In the pane on the right, under **Predictions**, each detected object is listed with its tag and probability. Select each object to see it highlighted in the image.
+    In the right pane, under **Predictions**, each detected object is listed with its tag and probability. Select each object to see it highlighted in the image.
 
     The predicted objects may not all be correct - after all, cyclists and pedestrians share many common features. The predictions that the model is most confident about have the highest probability values. Use the **Threshold Value** slider to eliminate objects with a low probability. You should be able to find a point at which only correct predictions are included (probably at around 85-90%).
 
       ![Screenshot of performance metrics for a trained model.](../media/test-detection-3b.png)
 
-5. Then close the **Quick Test** window.
+5. Then, close the **Quick Test** window.
 
 ### Task 4: Publish the object detection model
 
-Now you're ready to publish your trained model and use it from a client application.
+Now, you are ready to publish your trained model and use it from a client application.
 
 1. Click **&#128504; Publish**.
 
@@ -188,7 +188,7 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 
 ### Task 6: Test the client application
 
-Now you can use the sample client application to detect cyclists and pedestrians in images.
+Now, you can use the sample client application to detect cyclists and pedestrians in images.
 
 1. In the PowerShell pane, enter the following command to run the code:
 
@@ -202,34 +202,34 @@ Now you can use the sample client application to detect cyclists and pedestrians
 
 1. Review the prediction, which lists any objects detected with a probability of 90% or more, along with the coordinates of a bounding box around their location.
 
-1. Now let's try another image. Run this command:
+1. Now, let's try another image. Run this command:
 
     ```PowerShell
     ./detect-objects.ps1 2
     ```
 
-    This time the following image is analyzed:
+    This time, the following image is analyzed:
 
     ![Photograph of a group of pedestrians.](../media/create-object-detection-solution/road-safety-2.jpg)
 
- Hopefully, your object detection model did a good job of detecting pedestrians and cyclists in the test images.
+ Hopefully, your object detection model did well-detecting pedestrians and cyclists in the test images.
 
    
-   >**Note**: If you are not able to see the Result in Powershell, then navigate back to the custom vision portal, go to the **predictions** tab, you see the details of the images as showned below:
+   >**Note**: If you are not able to see the result in Powershell, then navigate back to the custom vision portal and go to the **predictions** tab. You see the details of the images as showed below:
 
    ![Photograph of a group of pedestrians.](../media/ai900mod3bimg12.png)
 
 
 ## Summary
 
-In this lab you have covered the following:
+In this lab, you have covered the following:
   
-  - Created a Custom Vision project
-  - Added and tag images
-  - Trained and test a model
-  - Published the object detection model
-  - Prepared a client application
-  - Tested the client application
+  - Created a Custom Vision project.
+  - Added and tagged images.
+  - Trained and tested a model.
+  - Published the object detection model.
+  - Prepared a client application.
+  - Tested the client application.
 
 ## Learn more
 
