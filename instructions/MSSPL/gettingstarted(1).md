@@ -24,7 +24,7 @@ Participants should have the following prerequisites:
 -   **Experience with the Azure Portal**: Proficiency in navigating and using the Azure Portal to manage and configure cloud resources.
 -   **Familiarity with PowerShell or Cloud Shell:** Basic knowledge of using PowerShell or Cloud Shell for running commands and scripts within Azure.
 -   **Basic Programming Knowledge:** Understanding of scripting or programming languages like PowerShell, used for configuring and running client applications in Azure.
--   **Understanding of APIs and Endpoints:** Familiarity with how to interact with APIs and use endpoints for connecting to services in Azure.
+-   **Understanding of APIs and Endpoints:** Familiarity with how to interact with APIs and use endpoints to connect to services in Azure.
 -   **Knowledge of Security Best Practices:** Awareness of security principles related to cloud services, including handling keys, authentication, and securing resources.
 
 ## Architecture
@@ -41,7 +41,7 @@ The architecture for this lab involves several key components:
 
 -   **Azure Resource Group:** A container that organizes and manages Azure resources, including Cognitive Services, for efficient deployment and scaling.
 -   **Azure Blob Storage:** Stores images or time-series data, providing scalable storage for input data used by the AI services.
--   **Azure AI Services Multi-Service:** Azure AI services multi-service resource allows you to access multiple Azure AI services using a single set of credentials, simplifying management and billing. This resource supports various services like language understanding, speech recognition, computer vision, and more, enabling you to seamlessly integrate multiple AI capabilities into your applications.
+-   **Azure AI Services Multi-Service:** Azure AI services are multi-service resources that allow you to access multiple Azure AI services using a single set of credentials, simplifying management and billing. This resource supports various services like language understanding, speech recognition, computer vision, and more, enabling you to seamlessly integrate multiple AI capabilities into your applications.
 -   **Azure AI Custom Vision:** Azure AI’s Custom Vision service allows you to build and deploy image recognition models tailored to your needs.
 -   **Azure AI Face API:** Azure AI’s Face API provides advanced algorithms for detecting, recognizing, and analyzing human faces in images.
 
@@ -96,17 +96,17 @@ Feel free to start, stop, or restart your virtual machine from the **Resources**
  
       ![](../media/GS3.png "Enter Password")
 
-1. If you see the pop-up "**Action Required**," click **Ask Later**.
+1. If you see the popup "**Action Required**," click **Ask Later**.
 
    ![](../media/asklater.png)
 
-   >**NOTE:** Do not enable MFA, select **Ask Later**.
+   >**NOTE:** Do not enable MFA. Select **Ask Later**.
  
-1. If you see the pop-up "**Stay signed in?**" click **No**.
+1. If you see the popup "**Stay signed in?**" click **No**.
 
    ![](../media/GS9.png)
 
-1. If you see the pop-up "**You have free Azure Advisor recommendations!**" close the window to continue the lab.
+1. If you see the popup "**You have free Azure Advisor recommendations!**" close the window to continue the lab.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
@@ -118,7 +118,7 @@ Learner Support Contacts:
 - **Email Support**: cloudlabs-support@spektrasystems.com
 - **Live Chat Support**: https://cloudlabs.ai/labs-support
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+Now, click **Next** from the lower right corner to move on to the next page.
 
 ![Create storage by clicking confirm.](../media/GettingStarted/azure-ai-search-getting%20started-3.png)
 
