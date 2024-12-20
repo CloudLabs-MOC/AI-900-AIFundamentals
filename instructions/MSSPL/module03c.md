@@ -37,7 +37,7 @@ If you haven't already done so, create a **Face API** resource in your Azure sub
 1. Select **Keys and Endpoint** under **Resource Management** for your Face resource. Click on **Show keys**. You will need the endpoint and keys when connecting from client applications.
 
       >**Note:** 
-      > Copy and save the **KEY 1** and **Endpoint** values to NotePad for future reference to connect from client applications. 
+      > Copy and save the **KEY 1** and **Endpoint** values to NotePad for future reference when connecting from client applications. 
 
 ## Task 2: Configure and Run a Client Application
 
