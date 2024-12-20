@@ -20,7 +20,7 @@ You will be able to complete the following tasks:
 
 In this task, you will create an Azure AI Services resource in the Azure portal and retrieve its keys and endpoint for integration.
 
-1. On the Azure portal, select the **&#65291;Create a resource** button, search for *Azure AI services,* and select it . Select **Create** under **Azure AI services** and select it. On  the **Create Azure AI services** tab, provide the following settings:
+1. On the Azure portal, select the **&#65291;Create a resource** button, search for *Azure AI services,* and select it. Select **Create** under **Azure AI services** and select it. On  the **Create Azure AI services** tab, provide the following settings:
     - **Subscription**: *Your Azure subscription*
     - **Resource group**: Select **ai-service-<inject key="DeploymentID" enableCopy="false"/>**
     - **Region**:  **<inject key="Region" enableCopy="false"/>**
@@ -36,8 +36,8 @@ In this task, you will create an Azure AI Services resource in the Azure portal 
 
 1. View the **Keys and Endpoint** page from the left pane under **Resource Management** for your Azure AI services resource. You will need the endpoint and keys to connect from client applications.
 
-   >**Note :** 
-      > Copy and save the **KEY 1** and **Endpoint** values to NotePad for future reference to connect from client applications. 
+   >**Note:** 
+      > Copy and save the **KEY 1** and **Endpoint** values to NotePad for future reference when connecting from client applications. 
 
 ## Task 2: Run Cloud Shell
 
@@ -49,7 +49,7 @@ In this task, you will set up Azure Cloud Shell with PowerShell to prepare the e
 
 1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.  
 
-1. On the **Getting started** page, select **Mount storage account** and select your subscription under storage account subscription. Click on **Apply**.
+1. On the **Getting started** page, select **Mount storage account** and your subscription under storage account subscription. Click on **Apply**.
 
 1. On the **Mount storage account** tab, select **I want to create a storage account**. Click on **Next**.
 
@@ -81,13 +81,13 @@ In this task, you will modify a sample client application with your resource det
     git clone https://github.com/CloudLabs-MOC/AI-900-AIFundamentals ai-search
     ```
 
-1. The files are downloaded to a folder named **ai-search**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell:
+1. The files are downloaded to a folder named **ai-search**. Now, we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell:
 
     ```PowerShell
     code .
     ```
 
-    >**Note**: If you get Switch to Classic Cloud Shell, click on **Confirm** and run the previous command again.
+    >**Note**: If you get Switch to Classic Cloud Shell, click **Confirm** and run the previous command again.
 
     Notice how this opens up an editor like the one in the image below:
 
@@ -97,10 +97,10 @@ In this task, you will modify a sample client application with your resource det
 
     ![The editor containing code to analyze an image](../media/analyze-images-computer-vision-service/analyze-image-code1.png)
 
-1. Don't worry too much about the code. The important thing is that it needs the endpoint URL and either of the keys for your Azure AI service resource. Use the keys and endpoint that you copied earlier in Task 1. Alternatively, you can copy these from the **Keys and Endpoints** page for your resource from the Azure portal and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *endpoint* placeholder values, respectively.
+1. Don't worry too much about the code. The important thing is that it needs the endpoint URL and either of the keys for your Azure AI service resource. Use the keys and endpoint that you copied earlier in Task 1. Alternatively, copy these from the **Keys and Endpoints** page for your resource from the Azure portal and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *endpoint* placeholder values, respectively.
 
     > **Tip:**
-    > You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
+    > You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint**, and **Editor** panes.
     
    After pasting the key and endpoint values, the first two lines of code should look similar to this:
 
