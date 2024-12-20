@@ -43,7 +43,7 @@ To train an object detection model, you need to create a Custom Vision project b
     - **Resource**: aiservice-<inject key="DeploymentID" enableCopy="false"/> [SO] **(3)**
     - **Project Types**: Object Detection **(4)**
     - **Domains**: General \[A1] **(5)**
-        >**Note**: Under the **Resource** dropdown if you don't find the resource you created previously in the Azure portal, kindly refresh the page and perform the task again.
+        >**Note**: Under the **Resource** dropdown, if you don't find the resource you created previously in the Azure portal, kindly refresh the page and perform the task again.
     - Click on **Create Project (6)**
 
       ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/azure-ai-search-lab2-1.png)
@@ -109,13 +109,13 @@ Now that you have tagged the images in your project, you are ready to train a mo
       
     In the right pane, under **Predictions**, each detected object is listed with its tag and probability. Select each object to see it highlighted in the image.
 
-    The predicted objects may not all be correct - after all, cyclists and pedestrians share many common features. The predictions that the model is most confident about have the highest probability values. Use the **Threshold Value** slider to eliminate objects with a low probability. You should be able to find a point at which only correct predictions are included (probably at around 85-90%).
+    The predicted objects may not all be correct—after all, cyclists and pedestrians share many common features. The predictions that the model is most confident about have the highest probability values. Use the **Threshold Value** slider to eliminate objects with a low probability. You should be able to find a point at which only correct predictions are included (probably at around 85-90%).
 
       ![Screenshot of performance metrics for a trained model.](../media/test-detection-3b.png)
 
 5. Then, close the **Quick Test** window.
 
-### Task 4: Publish the object detection model
+### Task 4: Publish the Object Detection Model
 
 Now, you are ready to publish your trained model and use it from a client application.
 
@@ -132,13 +132,13 @@ Now, you are ready to publish your trained model and use it from a client applic
 
       ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/azure-ai-search-lab2-2.png)
        
-Later, you will need the appropriate URL and Prediction-Key values to get a prediction from an Image URL, so keep this dialog box open and carry on to the next task.
+Later, you will need the appropriate URL and Prediction-Key values to get a prediction from an image URL, so keep this dialog box open and carry on to the next task.
 
-### Task 5: Prepare a client application
+### Task 5: Prepare a Client Application
 
 To test the capabilities of the Custom Vision service, we'll use a simple command-line application that runs in the cloud shell on Azure.
 
-1. Switch back to the browser tab containing the Azure portal, and select the **Cloud shell** (**[>_]**)  button at the top of the page to the right of the search box. This opens a cloud shell pane at the bottom of the portal.
+1. Switch back to the browser tab containing the Azure portal, and select the **Cloud Shell** (**[>_]**)  button at the top of the page to the right of the search box. This opens a cloud shell pane at the bottom of the portal.
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/powershell-portal-guide-1.png)
 
@@ -146,7 +146,7 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/ai900mod1img6.png)
 
-2. In the command shell, enter the following commands to download the files for this exercise and save them in a folder named **ai-900** (after removing that folder if it already exists)
+2. In the command shell, enter the following commands to download the files for this exercise and save them in a folder named **ai-900** (after removing that folder if it already exists).
 
     ```PowerShell
     rm -r ai-search -f
@@ -186,7 +186,7 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 
 6. After making the changes to the variables in the code, press **CTRL+S** to save the file. Then press **CTRL+Q** to close the code editor.
 
-### Task 6: Test the client application
+### Task 6: Test the Client Application
 
 Now, you can use the sample client application to detect cyclists and pedestrians in images.
 
@@ -212,10 +212,10 @@ Now, you can use the sample client application to detect cyclists and pedestrian
 
     ![Photograph of a group of pedestrians.](../media/create-object-detection-solution/road-safety-2.jpg)
 
- Hopefully, your object detection model did well-detecting pedestrians and cyclists in the test images.
+ Hopefully, your object detection model did well detecting pedestrians and cyclists in the test images.
 
    
-   >**Note**: If you are not able to see the result in Powershell, then navigate back to the custom vision portal and go to the **predictions** tab. You see the details of the images as showed below:
+   >**Note**: If you are not able to see the result in Powershell, then navigate back to the custom vision portal and go to the **Predictions** tab. You see the details of the images as shown below:
 
    ![Photograph of a group of pedestrians.](../media/ai900mod3bimg12.png)
 
