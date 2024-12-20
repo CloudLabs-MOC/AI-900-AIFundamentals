@@ -9,7 +9,7 @@ One of the driving forces that has enabled human civilization to develop is the 
 
 Artificial Intelligence (AI) can simplify communication by translating text or speech between languages, removing barriers to communication across countries and cultures.
 
-To test the Translator service's capabilities, we will use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply to real-world solutions, such as websites or phone apps.
+To test the Translator service's capabilities, we will use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply to real-world solutions, like websites or phone apps.
 
 ### Lab Objectives
 
@@ -32,7 +32,7 @@ To test the translation service's capabilities, we will use a simple command-lin
 
 Now that you have a custom model, you can run a simple client application that uses the translation service.
 
-1. The required files are downloaded to a folder named **ai-search** in the previous lab. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
+1. The required files are downloaded to a folder named **ai-search** in the previous lab. Now, we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
 
      ```PowerShell
     code .
