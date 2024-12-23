@@ -20,7 +20,11 @@ You will be able to complete the following tasks:
 
 In this task, you will create a Azure AI Services resource in the Azure portal and retrieve its keys and endpoint for integration.
 
-1. In the Azure Portal, select the **&#65291;Create a resource** button, search for *Azure AI services*, and select it . Select **Create** under **Azure AI services** and select it. On  Create Azure AI services tab provide the following settings:
+1. In the Azure Portal, select the **&#65291;Create a resource** button, search for *Azure AI services*, and select it . Select **Create** under **Azure AI services** and select it.
+
+    ![](../media/analyze-images-computer-vision-service/aiimage.png)
+
+    On  Create Azure AI services tab provide the following settings:
     - **Subscription**: *Your Azure subscription*
     - **Resource group**: Select **ai-service-<inject key="DeploymentID" enableCopy="false"/>**
     - **Region**:  **<inject key="Region" enableCopy="false"/>**
