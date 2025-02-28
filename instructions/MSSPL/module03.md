@@ -20,25 +20,41 @@ You will be able to complete the following tasks:
 
 In this task, you will create a Azure AI Services resource in the Azure portal and retrieve its keys and endpoint for integration.
 
-1. In the Azure Portal, select the **&#65291;Create a resource** button, search for *Azure AI services*, and select it . Select **Create** under **Azure AI services** and select it.
+1. In the Azure Portal, select the **&#65291;Create a resource** button, search for *Azure AI services*, and select it . 
 
-    ![](../media/analyze-images-computer-vision-service/aiimage.png)
+   ![](../media/analyze-images-computer-vision-service/create-resource.png)
 
+1. Select **Azure AI services**.
+
+    ![](../media/analyze-images-computer-vision-service/create00.png)
+
+
+1. Select **Create** under **Azure AI services** and select it.
+
+
+
+    
     On  Create Azure AI services tab provide the following settings:
     - **Subscription**: *Your Azure subscription*
-    - **Resource group**: Select **ai-service-<inject key="DeploymentID" enableCopy="false"/>**
-    - **Region**:  **<inject key="Region" enableCopy="false"/>**
-    - **Name**: *Enter **aiservice-<inject key="DeploymentID" enableCopy="false"/>***
-    - **Pricing tier**: Standard S0
-    - **By checking this box I acknowledge that I have read and understood all the terms below**: Selected
+    - **Resource group**: Select **ai-service-<inject key="DeploymentID" enableCopy="false"/>** (1)
+    - **Region**:  **<inject key="Region" enableCopy="false"/>** (2)
+    - **Name**: *Enter **aiservice-<inject key="DeploymentID" enableCopy="false"/>** (3)
+    - **Pricing tier**: Standard S0 (4)
+    - **By checking this box I acknowledge that I have read and understood all the terms below**: Selected (5)
 
-1. Click **Review + create** 
+    - Click **Review + create** (6)
    
+        ![](../media/azure-ai.png)
+
 1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page.
+
+    ![](../media/create0.png)
    
 1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your Azure AI services.
 
 1. View the **Keys and Endpoint** page from the left pane under Resource Management for your Azure AI services resource. You will need the endpoint and keys to connect from client applications.
+
+    ![](../media/keys-endpoints.png)
 
    >**Note :** 
       > Copy and save the **KEY 1** and **Endpoint** value to NotePad for future reference to connect from client applications. 
@@ -53,19 +69,27 @@ In this task, you will set up Azure Cloud Shell with PowerShell to prepare the e
 
 1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.  
 
+    ![](../media/analyze-images-computer-vision-service/cl.png)
+
 1. On the Getting started, select **Mount storage account** and select your subscription under storage account subscription. Click on **Apply**.
 
+   ![](../media/analyze-images-computer-vision-service/mount0.png)
+
 1. On the Mount storage account tab, select **I want to create a storage account**. Click on **Next**.
+
+    ![](../media/analyze-images-computer-vision-service/iwant2.png)
 
 1. On the create storage account tab, provide the details and select **Create**
 
     | Settings | Values |
     |  -- | -- |
-    | Subscription | **Existing subscription**|
-    | Storage account name | **blob<inject key="DeploymentID" enableCopy="false"/>**|
-    | Resource group | **ai-service-<inject key="DeploymentID" enableCopy="false"/>**|
-    | Region | **<inject key="Region" enableCopy="false"/>**|
+    | Subscription | **Existing subscription (1)**|
+    | Resource group | **ai-service-<inject key="DeploymentID" enableCopy="false"/> (2)**|
+    | Region | **<inject key="Region" enableCopy="false"/> (3)**|
+    | Storage account name | **blob<inject key="DeploymentID" enableCopy="false"/> (4)**|
     | File share | **none**|
+
+    ![](../media/analyze-images-computer-vision-service/create2.png)
 
 1. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is *Switch to Bash*. If it is *Switch to PowerShell*, select it to Switch into PowerShell.
 
