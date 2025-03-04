@@ -20,7 +20,7 @@ You will be able to complete the following tasks:
 
 In this task, you will create a Azure AI Services resource in the Azure portal and retrieve its keys and endpoint for integration.
 
-1. In the Azure Portal, select the **&#65291;Create a resource** button, search for *Azure AI services*, and select it . 
+1. In the Azure Portal, select the **&#65291;Create a resource** button, search for *Azure AI services*, and select it.
 
    ![](../media/analyze-images-computer-vision-service/create-resource.png)
 
@@ -28,13 +28,8 @@ In this task, you will create a Azure AI Services resource in the Azure portal a
 
     ![](../media/analyze-images-computer-vision-service/create00.png)
 
+1. Select **Create** under **Azure AI services** and select it. On  Create Azure AI services tab provide the following settings:
 
-1. Select **Create** under **Azure AI services** and select it.
-
-
-
-    
-    On  Create Azure AI services tab provide the following settings:
     - **Subscription**: *Your Azure subscription*
     - **Resource group**: Select **ai-service-<inject key="DeploymentID" enableCopy="false"/>** (1)
     - **Region**:  **<inject key="Region" enableCopy="false"/>** (2)
@@ -43,21 +38,20 @@ In this task, you will create a Azure AI Services resource in the Azure portal a
     - **By checking this box I acknowledge that I have read and understood all the terms below**: Selected (5)
 
     - Click **Review + create** (6)
-   
+
         ![](../media/azure-ai.png)
 
 1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page.
 
     ![](../media/create0.png)
-   
+
 1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your Azure AI services.
 
 1. View the **Keys and Endpoint** page from the left pane under Resource Management for your Azure AI services resource. You will need the endpoint and keys to connect from client applications.
 
     ![](../media/keys-endpoints.png)
 
-   >**Note :** 
-      > Copy and save the **KEY 1** and **Endpoint** value to NotePad for future reference to connect from client applications. 
+   >**Note :** Copy and save the **KEY 1** and **Endpoint** value to NotePad for future reference to connect from client applications.
 
 ## Task 2: Run Cloud Shell
 
