@@ -33,7 +33,7 @@ In this task, you will create a Azure AI Services resource in the Azure portal a
     - **Subscription**: *Your Azure subscription*
     - **Resource group**: Select **ai-service-<inject key="DeploymentID" enableCopy="false"/>** (1)
     - **Region**:  **<inject key="Region" enableCopy="false"/>** (2)
-    - **Name**: *Enter **aiservice-<inject key="DeploymentID" enableCopy="false"/>** (3)
+    - **Name**: Enter **aiservice-<inject key="DeploymentID" enableCopy="false"/>** (3)
     - **Pricing tier**: Standard S0 (4)
     - **By checking this box I acknowledge that I have read and understood all the terms below**: Selected (5)
 
