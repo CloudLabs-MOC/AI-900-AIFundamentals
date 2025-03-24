@@ -52,18 +52,6 @@ To test the capabilities of the Translation service, we'll use a simple command-
     > **Note:** The Translator service does not require the use of the Azure AI Service endpoint, so there is no need to modify the Translator service endpoint. Instead, a dedicated global endpoint is available specifically for the Translator service. 
 
 1. Hit **Ctrl+S** to save the changes that are done. Press **Ctrl+Q** to close the code editor window.
-
-    The sample client application will use the Translator service to do several tasks:
-    - Translate text from English into French, Italian, and Chinese.
-    - Translate audio from English into text in French
-
-    Use the below link to hear the input audio which will be processed by this application and translates:
-   
-       https://www.microsoft.com/videoplayer/embed/RWORN0
-
-    >**Note**: Copy the above link to your browser, and listen to the audio file. Do not use the **Lab VM browser**.
-
-    >**Note**: A real application could accept the input from a microphone and send the response to a speaker, but in this simple example, we'll use pre-recorded input in an audio file.
     
 1. In the Cloud Shell pane, enter the following command to run the code:
 
@@ -74,6 +62,8 @@ To test the capabilities of the Translation service, we'll use a simple command-
     >**Note**: Make sure your are in **ai-search** folder if not run **cd ai-search** command to move into the folder.
 
 1. Review the output. Did you see the translation from the text in English to French, Italian, and Chinese?  Did you see the English audio "hello" translated into text in French?
+
+    ![The editor containing code to use the Translator service](../media/translator-ps1.png)
 
 ### Summary
 
