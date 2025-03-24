@@ -82,6 +82,8 @@ To train an object detection model, you need to upload images that contain the c
 
       ![Picture1](../media/tagged-images-3b.png)
 
+      >**Note:** Make sure that each tag has at least 15 entries. If this requirement is not met, you will not be able to train the model.
+
 ## Task 3: Train and test a model
 
 Now that you've tagged the images in your project, you're ready to train a model.
