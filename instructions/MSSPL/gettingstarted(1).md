@@ -77,6 +77,14 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
 ![Create storage by clicking confirm.](../media/GettingStarted/azure-ai-search-getting%20started-2.png)
 
+## Lab Validation
+
+1. After completing the task, hit the **Validate** button under the Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
+
+   ![Inline Validation](../media/inline-validation.png)
+
+1. If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
 ## Lab Guide Zoom In/Zoom Out
 
 1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the upper-right corner of the lab environment.
