@@ -1,6 +1,6 @@
 # Getting started with Azure AI services
 
-## Overall Estimated Duration: 4 hours
+### Overall Estimated Duration: 4 hours
 
 ## Overview
 
