@@ -53,7 +53,7 @@ Welcome to your Getting started with Azure AI services Lab! We've prepared a sea
  
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
-![Create storage by clicking confirm.](../media/GettingStarted/azure-ai-search-getting%20started-4.png) 
+![Create storage by clicking confirm.](../media/gsaa1.png) 
 
 ### Virtual Machine & Lab Guide
  
@@ -63,19 +63,19 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-![Create storage by clicking confirm.](../media/GettingStarted/azure-ai-search-getting%20started-1.png)
+![Create storage by clicking confirm.](../media/gsaa2.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-![Create storage by clicking confirm.](../media/GettingStarted/azure-ai-search-getting%20started-5.png)
+![Create storage by clicking confirm.](../media/gsaa3.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-![Create storage by clicking confirm.](../media/GettingStarted/azure-ai-search-getting%20started-2.png)
+![Create storage by clicking confirm.](../media/gsaa4.png)
 
 ## Lab Validation
 
