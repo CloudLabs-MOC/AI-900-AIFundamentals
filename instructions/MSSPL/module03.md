@@ -24,34 +24,42 @@ In this task, you will create a Azure AI Services resource in the Azure portal a
 
    ![](../media/analyze-images-computer-vision-service/create-resource.png)
 
-1. Select **Azure AI services**.
+1. Search for **Azure AI services (1)** and select **Azure AI services (2)**.
 
-    ![](../media/analyze-images-computer-vision-service/create00.png)
+    ![](../media/gt1.png)
 
-1. Select **Create** under **Azure AI services** and select it. On  Create Azure AI services tab provide the following settings:
+1. Select **Create (1)** drop down under **Azure AI services** and select **Azure AI services (2)**.
 
-    - **Subscription**: *Your Azure subscription*
-    - **Resource group**: Select **ai-service-<inject key="DeploymentID" enableCopy="false"/>** (1)
-    - **Region**:  **<inject key="Region" enableCopy="false"/>** (2)
-    - **Name**: Enter **aiservice-<inject key="DeploymentID" enableCopy="false"/>** (3)
-    - **Pricing tier**: Standard S0 (4)
-    - **By checking this box I acknowledge that I have read and understood all the terms below**: Selected (5)
+   ![](../media/analyze-images-computer-vision-service/gt2.png)
 
-    - Click **Review + create** (6)
+1. On  Create **Azure AI services** tab provide the following settings:
 
-        ![](../media/azure-ai.png)
+    - Subscription: *Your Azure subscription* **(1)**
+    - Resource group: Select **ai-service-<inject key="DeploymentID" enableCopy="false"/>** **(2)**
+    - Region:  **<inject key="Region" enableCopy="false"/>** **(3)**
+    - Name: Enter **aiservice-<inject key="DeploymentID" enableCopy="false"/>** **(4)**
+    - Pricing tier: **Standard S0** **(5)**
+    - **By checking this box I acknowledge that I have read and understood all the terms below**: Selected **(6)**
+
+    - Click **Review + create** **(7)**
+
+      ![](../media/gt3.png)
 
 1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page.
 
-    ![](../media/create0.png)
+    ![](../media/gt4.png)
 
-1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your Azure AI services.
+1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your resourse group.
 
-1. View the **Keys and Endpoint** page from the left pane under Resource Management for your Azure AI services resource. You will need the endpoint and keys to connect from client applications.
+    ![](../media/gt5.png)
 
-    ![](../media/keys-endpoints.png)
+1. Select **aiservice-<inject key="DeploymentID" enableCopy="false"/>** AI Service resource.
 
-   >**Note :** Copy and save the **KEY 1** and **Endpoint** value to NotePad for future reference to connect from client applications.
+    ![](../media/gt6.png)
+
+1. Navigate to the **Keys and Endpoint (1)** page from the left pane under **Resource Management** for your Azure AI services resource. You will need the endpoint and keys to connect from client applications.  Copy and paste the **KEY 1 (1)** and **Endpoint (2)** value to Notepad for future reference to connect from client applications.
+
+    ![](../media/gt7.png)
 
 ## Task 2: Run Cloud Shell
 
@@ -65,15 +73,15 @@ In this task, you will set up Azure Cloud Shell with PowerShell to prepare the e
 
     ![](../media/analyze-images-computer-vision-service/cl.png)
 
-1. On the Getting started, select **Mount storage account** and select your subscription under storage account subscription. Click on **Apply**.
+1. On the Getting started, select **Mount storage account (1)** and select your subscription under storage account subscription **(2)**. Click on **Apply (3)**.
 
    ![](../media/analyze-images-computer-vision-service/mount0.png)
 
-1. On the Mount storage account tab, select **I want to create a storage account**. Click on **Next**.
+1. On the Mount storage account tab, select **I want to create a storage account (1)**. Click on **Next (2)**.
 
     ![](../media/analyze-images-computer-vision-service/iwant2.png)
 
-1. On the create storage account tab, provide the details and select **Create**
+1. On the create storage account tab, provide the details and select **Create (6)**
 
     | Settings | Values |
     |  -- | -- |
@@ -83,9 +91,9 @@ In this task, you will set up Azure Cloud Shell with PowerShell to prepare the e
     | Storage account name | **blob<inject key="DeploymentID" enableCopy="false"/> (4)**|
     | File share | **none**|
 
-    ![](../media/analyze-images-computer-vision-service/create2.png)
+    ![](../media/analyze-images-computer-vision-service/gt8.png)
 
-1. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is *Switch to Bash*. If it is *Switch to PowerShell*, select it to Switch into PowerShell.
+1. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is **Switch to Bash**. If it is *Switch to PowerShell*, select it to Switch into PowerShell.
 
     ![How to find the left hand drop down menu to switch to PowerShell](../media/analyze-images-computer-vision-service/azure-ai-search-lab1-3.png)
 
@@ -97,11 +105,13 @@ In this task, you will set up Azure Cloud Shell with PowerShell to prepare the e
 
 In this task, you will modify a sample client application with your resource details and use it to analyze images with the Computer Vision service.
 
-1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
+1. In the command shell, enter the following command to download the sample application and save it to a folder called **ai-search**.
 
     ```PowerShell
     git clone https://github.com/CloudLabs-MOC/AI-900-AIFundamentals ai-search
     ```
+
+     ![](../media/analyze-images-computer-vision-service/gt9.png)    
 
 1. The files are downloaded to a folder named **ai-search**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell:
 
@@ -115,21 +125,26 @@ In this task, you will modify a sample client application with your resource det
 
     ![The code editor.](../media/analyze-images-computer-vision-service/powershell-portal-guide-4(2).png)
 
-1. In the **Files** pane on the left, expand **ai-search** and select **analyze-image.ps1**. This file contains some code that uses the Computer Vision service to analyze an image, as shown here:
+1. If the code editor is not opened, please re enter the below commnad **(1)** then you will be to see the code editor **(2)**. 
 
-    ![The editor containing code to analyze an image](../media/analyze-images-computer-vision-service/analyze-image-code1.png)
+    ```PowerShell
+    code .
+    ```
 
-1. Don't worry too much about the code, the important thing is that it needs the endpoint URL and either of the keys for your Azure AI service resource. Use the Keys and Endpoint which you have copied earlier in Task 1. Alternatively, you can copy these from the **Keys and Endpoints** page for your resource from the Azure portal and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *Enpoint* placeholder values respectively.
+     ![](../media/analyze-images-computer-vision-service/gt10.png)        
 
-    > **Tip:**
-    > You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
-    
-   After pasting the key and endpoint values, the first two lines of code should look similar to this:
+1. In the **Files** pane on the left, expand **ai-search (1)** and select **analyze-image.ps1 (2)**. This file contains some code that uses the Computer Vision service to analyze an image, as shown here:
 
-    
-     > $key="1a2b3c4d5e6f7g8h9i0j...."    
-     > $endpoint="https..."
+    ![The editor containing code to analyze an image](../media/analyze-images-computer-vision-service/gt11.png)
 
+1. Don't worry too much about the code, the important thing is that it needs the endpoint URL and either of the keys for your Azure AI service resource. Use the Keys and Endpoint which you have copied earlier in **Task 1**.
+
+1. Replace the **YOUR_KEY** with **KEY 1 (1)** and **YOUR_ENDPOINT** with **Enpoint (2)** value of AI Service that you have copied in the previous task.
+
+    ![The editor containing code to analyze an image](../media/analyze-images-computer-vision-service/gt12.png)
+
+     >**Tip:** You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
+   
 1. After making the changes to the variables in the code, press **CTRL+S** to save the file. 
 
 1. The sample client application will use your Computer Vision service to analyze the following image, taken by a camera in the Northwind Traders store:
@@ -141,6 +156,8 @@ In this task, you will modify a sample client application with your resource det
     ```PowerShell
     cd ai-search
     ```
+
+     ![The editor containing code to analyze an image](../media/analyze-images-computer-vision-service/gt13.png)    
     
     ```PowerShell
     ./analyze-image.ps1 store-camera-1.jpg
@@ -151,7 +168,7 @@ In this task, you will modify a sample client application with your resource det
     - A list of objects identified in the image.
     - A list of "tags" that are relevant to the image.
 
-        ![An image of person with a shopping basket in a supermarket](../media/analyze-images-computer-vision-service/azure-ai-search-lab1-5.png)
+      ![The editor containing code to analyze an image](../media/analyze-images-computer-vision-service/gt14.png)     
 
 1. Now let's try another image:
 
@@ -165,7 +182,7 @@ In this task, you will modify a sample client application with your resource det
 
 1. Review the results of the image analysis for the second image.
 
-    ![An image of person with a shopping basket in a supermarket](../media/analyze-images-computer-vision-service/azure-ai-search-lab1-6.png)
+    ![An image of person with a shopping basket in a supermarket](../media/analyze-images-computer-vision-service/gt15.png)
 
 1. Let's try one more:
 
@@ -179,7 +196,7 @@ In this task, you will modify a sample client application with your resource det
 
 1. Review the results of the image analysis for the third image.
 
-    ![An image of person with a shopping basket in a supermarket](../media/analyze-images-computer-vision-service/azure-ai-search-lab1-7.png)
+    ![An image of person with a shopping basket in a supermarket](../media/analyze-images-computer-vision-service/gt16.png)
 
 <validation step="e2c31f6e-21a8-4d12-a1dd-4484dbf76091" />
 

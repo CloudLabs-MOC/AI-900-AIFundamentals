@@ -21,6 +21,8 @@ You will be able to complete the following tasks:
 
 To test the capabilities of the Translation service, we'll use a simple command-line application that runs in the Cloud Shell on Azure. 
 
+1. Close the code editor, if you have it already open.
+
 1. Switch back to the browser tab containing the Azure portal, where the **Cloud shell** (**[>_]**) is already opened.
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/analyze-images-computer-vision-service/powershell-portal-guide-1(1).png)
@@ -33,7 +35,7 @@ To test the capabilities of the Translation service, we'll use a simple command-
 
 1. The required files are downloaded to a folder named **ai-search** in the previous lab. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
 
-     ```PowerShell
+    ```PowerShell
     code .
     ```
 
@@ -41,25 +43,43 @@ To test the capabilities of the Translation service, we'll use a simple command-
 
     ![The code editor.](../media/powershell-portal-guide-4.png)
 
-1. In the **Files** pane on the left, expand **ai-search** and select **translator.ps1**. This file contains some code that uses the Translator service:
+1. If the code editor is not opened, please re enter the below commnad **(1)** then you will be to see the code editor **(2)**. 
 
-    ![The editor containing code to use the Translator service](../media/translate-code-4b.png)
+    ```PowerShell
+    code .
+    ```
 
-1. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Azure AI Services resource. Copy the values of **KEY 1** and **Location/Region** value from *Keys and Endpoints* page for your **aiservice-<inject key="DeploymentID" enableCopy="false"/>*** resource from the Azure portal and paste them into the code editor.
+     ![](../media/analyze-images-computer-vision-service/gt10.png)     
 
-    ![Find the key and endpoint tab in your Azure AI Services resource's left hand pane.](../media/azure-ai-search-lab4-3.png)
+1. In the **Files** pane on the left, expand **ai-search (1)** and select **translator.ps1 (2)**. This file contains some code that uses the Translator service:
+
+    ![The editor containing code to use the Translator service](../media/gt55.png)
+
+1. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Azure AI Services resource. 
+
+    - Navigate to **aiservice-<inject key="DeploymentID" enableCopy="false"/> (1)** AI Service resource. Go to **Keys and Endpoints (2)**, Copy the values of **KEY 1 (3)** and **Location/Region (4)** value from **Keys and Endpoints** page. Paste them into the code editor.
+
+      ![Find the key and endpoint tab in your Azure AI Services resource's left hand pane.](../media/gt56.png)
 
     > **Note:** The Translator service does not require the use of the Azure AI Service endpoint, so there is no need to modify the Translator service endpoint. Instead, a dedicated global endpoint is available specifically for the Translator service. 
 
+1. Replace **YOUR_KEY** with **KEY1** value and **YOUR_LOCATION** with **Location/Region** value, respectively.
+
+    ![The editor containing code to use the Translator service](../media/gt57.png)
+
 1. Hit **Ctrl+S** to save the changes that are done. Press **Ctrl+Q** to close the code editor window.
+
+1. Make sure your are in **ai-search** folder if not run the below command to move into the folder.
+
+    ```PowerShell
+    cd ai-search
+    ```
     
 1. In the Cloud Shell pane, enter the following command to run the code:
 
     ```PowerShell
     ./translator.ps1
     ```
-
-    >**Note**: Make sure your are in **ai-search** folder if not run **cd ai-search** command to move into the folder.
 
 1. Review the output. Did you see the translation from the text in English to French, Italian, and Chinese?  Did you see the English audio "hello" translated into text in French?
 

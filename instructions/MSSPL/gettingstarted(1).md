@@ -55,6 +55,12 @@ Once you're ready to dive in, your virtual machine and **Guide** will be right a
 
 ![Create storage by clicking confirm.](../media/gsaa1.png) 
 
+## Lab Guide Zoom In/Zoom Out
+
+1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the upper-right corner of the lab environment.
+
+   ![Create storage by clicking confirm.](../media/rag5.png)
+
 ### Virtual Machine & Lab Guide
  
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
@@ -73,21 +79,18 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 ## Managing Your Virtual Machine
  
-Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
  
-![Create storage by clicking confirm.](../media/gsaa4.png)
+![Create storage by clicking confirm.](../media/rag4.png)
 
 ## Lab Validation
 
 1. After completing the task, hit the **Validate** button under the Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
+   ![Create storage by clicking confirm.](../media/gt58.png)
+
 1. If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
-## Lab Guide Zoom In/Zoom Out
-
-1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the upper-right corner of the lab environment.
-
-   ![Create storage by clicking confirm.](../media/azure-ai-search-getting%20started-6.png)
 
 ## Let's Get Started with Azure Portal
  
