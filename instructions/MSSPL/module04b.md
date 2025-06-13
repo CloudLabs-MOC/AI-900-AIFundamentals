@@ -35,7 +35,7 @@ To test the capabilities of the Translation service, we'll use a simple command-
 
 1. The required files are downloaded to a folder named **ai-search** in the previous lab. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
 
-     ```PowerShell
+    ```PowerShell
     code .
     ```
 

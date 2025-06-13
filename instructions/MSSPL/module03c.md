@@ -92,7 +92,7 @@ To test the capabilities of the Face service, we'll use a simple command-line ap
 
 1. Make sure your are in **ai-search** folder if not run the below command to move into the folder.
 
-     ```PowerShell
+    ```PowerShell
     cd ai-search
     ```
 
