@@ -69,13 +69,13 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-![Create storage by clicking confirm.](../media/gsaa2.png)
+![Create storage by clicking confirm.](../media/gg1.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-![Create storage by clicking confirm.](../media/gsaa3.png)
+![Create storage by clicking confirm.](../media/gg2.png)
  
 ## Managing Your Virtual Machine
  
@@ -87,7 +87,7 @@ Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from
 
 1. After completing the task, hit the **Validate** button under the Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
-   ![Create storage by clicking confirm.](../media/gt58.png)
+   ![Create storage by clicking confirm.](../media/gdev5.png)
 
 1. If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 

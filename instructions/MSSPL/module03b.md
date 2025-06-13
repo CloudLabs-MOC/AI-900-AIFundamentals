@@ -33,7 +33,7 @@ To train an object detection model, you need to create a Custom Vision project b
 
      ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/gt17.png)
 
-1. I prompted, sign in using the Microsoft account associated with your Azure subscription.
+1. If prompted, sign in using the Microsoft account associated with your Azure subscription.
 
 1. In the **Terms of Service** box, check the box **(1)** and click on **I agree (2)**.
 

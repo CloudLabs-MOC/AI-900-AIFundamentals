@@ -25,7 +25,7 @@ You can use the Face service by creating a **Face** resource. (Face API is no lo
 
 1. Search for **Face (2)** and select **Face (2)** from the services.
 
-    ![](../media/gt45.png)
+    ![](../media/gt-45.png)
 
 1. Click on the **Create (1)** drop down in **Face** service then select **Face (2)**.
 
