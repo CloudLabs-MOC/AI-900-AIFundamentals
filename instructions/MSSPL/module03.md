@@ -89,9 +89,9 @@ In this task, you will set up Azure Cloud Shell with PowerShell to prepare the e
     | Resource group | **ai-service-<inject key="DeploymentID" enableCopy="false"/> (2)**|
     | Region | **<inject key="Region" enableCopy="false"/> (3)**|
     | Storage account name | **blob<inject key="DeploymentID" enableCopy="false"/> (4)**|
-    | File share | **none**|
+    | File share | **none (5)**|
 
-    ![](../media/analyze-images-computer-vision-service/gt8.png)
+    ![](../media/gt59.png)
 
 1. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is **Switch to Bash**. If it is *Switch to PowerShell*, select it to Switch into PowerShell.
 
