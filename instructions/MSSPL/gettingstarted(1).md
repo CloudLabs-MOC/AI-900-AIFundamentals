@@ -158,6 +158,6 @@ Learner Support Contacts:
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 
-![Create storage by clicking confirm.](../media/GettingStarted/azure-ai-search-getting%20started-3.png)
+![Create storage by clicking confirm.](../media/gg3.png)
 
 ### Happy Learning!!
