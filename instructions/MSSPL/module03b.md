@@ -27,7 +27,7 @@ You will be able to complete the following tasks:
 
 To train an object detection model, you need to create a Custom Vision project based on your training resource. To do this, you'll use the Custom Vision portal.
 
-1. In a new browser tab, open the Custom Vision portal at [https://customvision.ai](https://customvision.ai?azure-portal=true).
+1. In a new browser tab, open the Custom Vision portal at [https://customvision.ai](https://customvision.ai?azure-portal=true)
 
 1. Click on **Sign in.**
 
@@ -39,7 +39,7 @@ To train an object detection model, you need to create a Custom Vision project b
 
      ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/2-7-25-m2-1.png)
 
-1. Click **NEW PROJECT**.
+1. On the **Custom Vision** page, click **NEW PROJECT**
 
    ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/2-7-25-m2-2.png)
 
@@ -65,7 +65,7 @@ To train an object detection model, you need to upload images that contain the c
 
 1. Copy the link and open it to download the zip file of images [https://aka.ms/traffic-images](https://aka.ms/traffic-images).
 
-1. Click on the **download** icon **(1)** and select the **Folder (2)** icon to open the downloaded the zip file.
+1. Click on the **Download** icon **&#11015; (1)** at the top of your browser. Then, click the **Folder** icon **&#128193;  (2)** to open the folder containing the downloaded **road-safety.zip** file.
 
     ![](../media/gt21.png)
 
@@ -73,7 +73,7 @@ To train an object detection model, you need to upload images that contain the c
 
     ![](../media/gt22.png)
 
-1. Select **Extract**. The extracted folder contains a collection of images of cyclists and pedestrians.    
+1. In the **Extract Compressed (Zipped) Folders** window, click **Extract (3)** to unzip the contents to the specified folder. 
 
    ![](../media/2-7-25-m2-4.png)
 
@@ -99,7 +99,7 @@ To train an object detection model, you need to upload images that contain the c
 
 1. Hold the mouse over any object (cyclist or pedestrian) in the image until an automatically detected region is displayed **(1)**. Then select the object, and if necessary, resize the region to surround it. Alternatively, you can simply drag around the object to create a region.
 
-   When the object is tightly selected within the rectangular region, enter the appropriate tag for the object (**Cyclist** or **Pedestrian**) **(2)** and use the **Tag region** (**+**) **(3)** button to add the tag to the project.
+   When the object is tightly selected within the rectangular region, enter the appropriate tag for the object (**Cyclist** or **Pedestrian**) **(2)** and use the **Tag region (+) (3)** button to add the tag to the project.
 
      ![Screenshot of an image with a tagged region in the Image Detaol dialog box.](../media/gt30.png)
 
@@ -115,7 +115,7 @@ To train an object detection model, you need to upload images that contain the c
 
         ![Screenshot of an image with a tagged region in the Image Detaol dialog box.](../media/multiple-objects-3b.png)
 
-1. When you have finished tagging the last image, close the **Image Detail** editor, and On the **Training Images** page, under **Tags**, select **Tagged (1)** to view all your tagged images.
+1. When you have finished tagging the last image, close the **Image Detail** editor, and on the **Training Images** page, under **Tags**, select **Tagged (1)** to view all your tagged images, such as **Cyclist** and **Pedestrian** **(2)**.
 
       ![Picture1](../media/gt31.png)
 
@@ -125,11 +125,11 @@ To train an object detection model, you need to upload images that contain the c
 
 Now that you've tagged the images in your project, you're ready to train a model.
 
-1. In the Custom Vision project, click the **&#9881;⚙️ Train** button to begin training your object detection model using the tagged images.
+1. In the Custom Vision project, click the **&#9881; Train** button to begin training your object detection model using the tagged images.
    
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/ai900mod3bimg8.png)
    
-1. Select the **Quick Training (1)** option, Again click **Train (2)**.
+1. Select the **Quick Training** option **(1)** to train your model using the default training settings. Then, click **Train** **(2)** to begin the training process.
  
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/2-7-25-m2-6.png)
   
@@ -143,11 +143,11 @@ Now that you've tagged the images in your project, you're ready to train a model
 
       ![Screenshot of performance metrics for a trained model.](../media/gt34.png)
 
-1. At the top right of the page, click **Quick Test**.
+1. At the top right of the page, click **&#128504; Quick Test**.
 
       ![Screenshot of performance metrics for a trained model.](../media/2-7-25-m2-7.png)
 
-1. Then in the **Image URL** box, enter `https://aka.ms/pedestrian-cyclist` **(1)**, click on the send icon **(2)** and view the results.      
+1. Then in the **Image URL (1)** box, enter `https://aka.ms/pedestrian-cyclist`, click on the send icon **&#10145; (2)** and view the results.      
 
     ![](../media/2-7-25-m2-8.png)
       
@@ -163,11 +163,12 @@ Now that you've tagged the images in your project, you're ready to train a model
 
 Now you're ready to publish your trained model and use it from a client application.
 
-1. Click **&#128504; Publish**.
+1. In the **top-left corner** of the **Performance** tab, click the **&#128504; Publish** button to make the trained iteration available for predictions.
+
 
    ![Photograph of a group of pedestrians.](../media/2-7-25-m2-9.png)
  
-1. To publish the trained model with the following settings:
+1. Publish the trained model with the following settings:
     
     - Model name: **traffic-safety** **(1)**
     - Prediction resource: Select **aiservice-<inject key="DeploymentID" enableCopy="false"/> (2)**
@@ -191,7 +192,9 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/powershell-portal-guide-1.png)
 
-1. If the connection is lost, click on **Reconnect**.    
+1. If you see the Cloud Shell timed out window, select **Reconnect**; otherwise, proceed with the next Task.   
+
+   ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/azure-ai-search-lab4-2.png)
 
 1. If the Code editor is closed, then only run the below command. The files are downloaded to a folder named **ai-search**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell:
 
@@ -275,7 +278,7 @@ In this lab, you have covered the following:
   
   - Created a Custom Vision project
   - Added and tagged images
-  - Trained and test a model
+  - Train and test a model
   - Published the object detection model
   - Prepared a client application
   - Tested the client application
