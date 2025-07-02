@@ -10,28 +10,28 @@ Azure AI services offer a comprehensive set of tools that allow you to integrate
 
 This lab is designed to equip participants with hands-on experience in exploring Azure AI services, such as Computer Vision and Azure AI Services, to enhance applications with capabilities like image recognition, text analysis, and speech processing.
 
--   **Analyze images with Azure AI Computer Vision :** Implement a Azure AI Services resource to analyze images using the Computer Vision service. Configure and run a client app to extract captions, objects, and tags for visual insights.
--   **Detect objects with Azure AI Custom Vision :** Azure AI’s Custom Vision service allows you to build and deploy image recognition models tailored to your needs. It supports image classification and object detection, enabling you to label images, train models, and test their accuracy without requiring machine learning expertise.
--   **Analyze images with Azure AI Face API :** Azure AI’s Face API provides advanced algorithms for detecting, recognizing, and analyzing human faces in images. It supports various functionalities such as face detection, verification, identification, and grouping, making it useful for applications like identity verification, touchless access control, and privacy protection through automatic face blurring.
--   **Translate text and audio with Azure AI Translator :** Azure AI Translator is a cloud-based neural machine translation service that enables you to translate text and documents across more than 100 languages using a simple REST API call. It supports various use cases, such as real-time translation for call centers, multilingual conversational agents, and in-app communication.
+-   **Analyze images with Azure AI Computer Vision:** Implement an Azure AI Services resource to analyze images using the Computer Vision service. Configure and run a client app to extract captions, objects, and tags for visual insights.
+-   **Detect objects with Azure AI Custom Vision:** Azure AI’s Custom Vision service allows you to build and deploy image recognition models tailored to your needs. It supports image classification and object detection, enabling you to label images, train models, and test their accuracy without requiring machine learning expertise.
+-   **Analyze images with Azure AI Face API:** Azure AI’s Face API provides advanced algorithms for detecting, recognizing, and analyzing human faces in images. It supports various functionalities such as face detection, verification, identification, and grouping, making it useful for applications like identity verification, touchless access control, and privacy protection through automatic face blurring.
+-   **Translate text and audio with Azure AI Translator:** Azure AI Translator is a cloud-based neural machine translation service that enables you to translate text and documents across more than 100 languages using a simple REST API call. It supports various use cases, such as real-time translation for call centers, multilingual conversational agents, and in-app communication.
 
 ## Prerequisites
 
 Participants should have the following prerequisites:
 
--   **Basic Understanding of Cloud Computing :** Familiarity with fundamental cloud concepts and services, particularly in the context of Microsoft Azure.
--   **Knowledge of Azure AI Services :** Understanding of the Azure AI Services suite, including how to provision and use services like Computer Vision, Custom Vision, Azure AI Translator and Azure AI Face.
+-   **Basic Understanding of Cloud Computing:** Familiarity with fundamental cloud concepts and services, particularly in the context of Microsoft Azure.
+-   **Knowledge of Azure AI Services:** Understanding of the Azure AI Services suite, including how to provision and use services like Computer Vision, Custom Vision, Azure AI Translator, and Azure AI Face.
 -   **Experience with the Azure Portal**: Proficiency in navigating and using the Azure Portal to manage and configure cloud resources.
--   **Familiarity with PowerShell or Cloud Shell :** Basic knowledge of using PowerShell or Cloud Shell for running commands and scripts within Azure.
--   **Basic Programming Knowledge :** Understanding of scripting or programming languages like PowerShell, which are used for configuring and running client applications in Azure.
--   **Understanding of APIs and Endpoints :** Familiarity with how to interact with APIs and use endpoints for connecting to services in Azure.
--   **Knowledge of Security Best Practices :** Awareness of security principles related to cloud services, including handling keys, authentication, and securing resources.
+-   **Familiarity with PowerShell or Cloud Shell:** Basic knowledge of using PowerShell or Cloud Shell for running commands and scripts within Azure.
+-   **Basic Programming Knowledge:** Understanding of scripting or programming languages like PowerShell, which are used for configuring and running client applications in Azure.
+-   **Understanding of APIs and Endpoints:** Familiarity with how to interact with APIs and use endpoints for connecting to services in Azure.
+-   **Knowledge of Security Best Practices:** Awareness of security principles related to cloud services, including handling keys, authentication, and securing resources.
 
-## Architechture
+## Architecture
 
 The lab architecture leverages a range of Microsoft Azure services and tools to provide hands-on experience with cloud computing, AI, and security practices. Using the Azure Portal, users can provision and manage resources like **Azure AI Services**, which include **Custom Vision**, **Face API**, and **Azure AI services multi-service**. PowerShell or Cloud Shell is used to execute scripts for provisioning and managing these resources. The lab encourages interaction with APIs and endpoints to connect client applications with Azure services, enabling real-time data processing and analysis. Additionally, a focus on security best practices ensures proper handling of authentication, keys, and resource protection. Participants will build, deploy, and test AI models and applications for various use cases, such as image recognition, face detection, and language translation, while developing a deeper understanding of cloud architecture, AI tools, and secure cloud operations..
 
-## Architechture Diagram
+## Architecture Diagram
 
 ![](../media/new-arch-diagram.png)
 
@@ -39,11 +39,11 @@ The lab architecture leverages a range of Microsoft Azure services and tools to 
 
 The architecture for this lab involves several key components:
 
--   **Azure Resource Group :** A container that organizes and manages Azure resources, including Cognitive Services, for efficient deployment and scaling.
--   **Azure Blob Storage :** Stores images or time-series data, providing scalable storage for input data used by the AI services.
--   **Azure AI services multi-service :** Azure AI services multi-service resource allows you to access multiple Azure AI services using a single set of credentials, simplifying management and billing. This resource supports various services like language understanding, speech recognition, computer vision, and more, enabling you to integrate multiple AI capabilities into your applications seamlessly
--   **Azure AI Custom Vision :** Azure AI’s Custom Vision service allows you to build and deploy image recognition models tailored to your needs.
--   **Azure AI Face API :** Azure AI’s Face API provides advanced algorithms for detecting, recognizing, and analyzing human faces in images.
+-   **Azure Resource Group:** A container that organizes and manages Azure resources, including Cognitive Services, for efficient deployment and scaling.
+-   **Azure Blob Storage:** Stores images or time-series data, providing scalable storage for input data used by the AI services.
+-   **Azure AI services multi-service:** Azure AI services multi-service resource allows you to access multiple Azure AI services using a single set of credentials, simplifying management and billing. This resource supports various services like language understanding, speech recognition, computer vision, and more, enabling you to integrate multiple AI capabilities into your applications seamlessly
+-   **Azure AI Custom Vision:** Azure AI’s Custom Vision service allows you to build and deploy image recognition models tailored to your needs.
+-   **Azure AI Face API:** Azure AI’s Face API provides advanced algorithms for detecting, recognizing, and analyzing human faces in images.
 
 ## Getting Started with Lab
 
@@ -63,7 +63,7 @@ Once you're ready to dive in, your virtual machine and **Guide** will be right a
 
 ### Virtual Machine & Lab Guide
  
-Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+Your virtual machine is your workhorse throughout the workshop. The guide is your roadmap to success.
  
 ## Exploring Your Lab Resources
  
@@ -73,7 +73,7 @@ To get a better understanding of your lab resources and credentials, navigate to
  
 ## Utilizing the Split Window Feature
  
-For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+For convenience, you can open the guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
 ![Create storage by clicking confirm.](../media/gg2.png)
  
@@ -85,7 +85,7 @@ Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from
 
 ## Lab Validation
 
-1. After completing the task, hit the **Validate** button under the Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
+1. After completing the task, hit the **Validate** button under the Validation tab integrated within your guide. If you receive a success message, you can proceed to the next task; if not, carefully read the error message and retry the step, following the instructions in the guide.
 
    ![Create storage by clicking confirm.](../media/gdev5.png)
 
@@ -120,7 +120,7 @@ Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
-## Steps to Proceed with MFA Setup if Ask Later Option is Not Visible
+## Steps to Proceed with MFA Setup if the Ask Later Option is Not Visible
 
    > **Note:** Continue with the exercises if MFA is already enabled or the option is unavailable.
 
