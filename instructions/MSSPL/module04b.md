@@ -1,7 +1,7 @@
 
 # Lab 04: Translate text and audio with Azure AI Translator
 
-## Estimated Duration: 60 minutes
+## Estimated Duration: 60 Minutes
 
 ## Overview
 
@@ -21,13 +21,13 @@ You will be able to complete the following tasks:
 
 To test the capabilities of the Translation service, we'll use a simple command-line application that runs in the Cloud Shell on Azure. 
 
-1. Close the code editor, if you have it already open.
+1. Close the code editor if you have it already open.
 
 1. Switch back to the browser tab containing the Azure portal, where the **Cloud shell** (**[>_]**) is already opened.
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/analyze-images-computer-vision-service/powershell-portal-guide-1(1).png)
 
-1. If you see Cloud Shell timed out window, select **Reconnect** otherwise proceed with the next Task.
+1. If you see the Cloud Shell timed out window, select **Reconnect**; otherwise, proceed with the next Task.
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/azure-ai-search-lab4-2.png)
 
@@ -43,7 +43,7 @@ To test the capabilities of the Translation service, we'll use a simple command-
 
     ![The code editor.](../media/powershell-portal-guide-4.png)
 
-1. If the code editor is not opened, please re enter the below commnad **(1)** then you will be to see the code editor **(2)**. 
+1. If the code editor is not opened, please re-enter the below command **(1)**, then you will be to see the code editor **(2)**. 
 
     ```PowerShell
     code .
@@ -53,23 +53,27 @@ To test the capabilities of the Translation service, we'll use a simple command-
 
 1. In the **Files** pane on the left, expand **ai-search (1)** and select **translator.ps1 (2)**. This file contains some code that uses the Translator service:
 
-    ![The editor containing code to use the Translator service](../media/gt55.png)
+    ![The editor containing code to use the Translator service](../media/2-7-25-m4-1.png)
 
-1. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Azure AI Services resource. 
+1. Don't worry too much about the details of the code; the important thing is that it needs the region/location and either of the keys for your Azure AI Services resource. 
 
-    - Navigate to **aiservice-<inject key="DeploymentID" enableCopy="false"/> (1)** AI Service resource. Go to **Keys and Endpoints (2)**, Copy the values of **KEY 1 (3)** and **Location/Region (4)** value from **Keys and Endpoints** page. Paste them into the code editor.
+1. Navigate to **ai-service-<inject key="DeploymentID" enableCopy="false"/>**, In the resource group, select the **aiservice-<inject key="DeploymentID" enableCopy="false"/> (1)**  resource with the type **Azure AI services multi-service account**.
 
-      ![Find the key and endpoint tab in your Azure AI Services resource's left hand pane.](../media/gt56.png)
+   ![The editor containing code to use the Translator service](../media/2-7-25-m4-2.png)
+   
+1. In the left menu, go to**Keys and Endpoints (1)**. copy the values of **KEY 1 (2)** and **Location/Region (3)** value from the **Keys and Endpoints** page. Paste them into the code editor.
+   
+      ![Find the key and endpoint tab in your Azure AI Services resource's left hand pane.](../media/2-7-25-m4-3.png)
 
     > **Note:** The Translator service does not require the use of the Azure AI Service endpoint, so there is no need to modify the Translator service endpoint. Instead, a dedicated global endpoint is available specifically for the Translator service. 
 
-1. Replace **YOUR_KEY** with **KEY1** value and **YOUR_LOCATION** with **Location/Region** value, respectively.
+1. Replace **YOUR_KEY** with **KEY 1 (1)** value and **YOUR_LOCATION** with **Location/Region (2)** value, respectively. That you had copied in the previous step.
 
-    ![The editor containing code to use the Translator service](../media/gt57.png)
+    ![The editor containing code to use the Translator service](../media/2-7-25-m4-4.png)
 
-1. Hit **Ctrl+S** to save the changes that are done. Press **Ctrl+Q** to close the code editor window.
+1. Hit **Ctrl+S** to save the changes that have been made. Press **Ctrl+Q** to close the code editor window.
 
-1. Make sure your are in **ai-search** folder if not run the below command to move into the folder.
+1. Make sure you are in the **ai-search** folder. If not, run the below command to move into the folder.
 
     ```PowerShell
     cd ai-search
@@ -83,11 +87,11 @@ To test the capabilities of the Translation service, we'll use a simple command-
 
 1. Review the output. Did you see the translation from the text in English to French, Italian, and Chinese?  Did you see the English audio "hello" translated into text in French?
 
-    ![The editor containing code to use the Translator service](../media/translator-ps1.png)
+    ![The editor containing code to use the Translator service](../media/2-7-25-m4-5.png)
 
 ### Summary
 
-In this lab you have covered the following:
+In this lab, you have covered the following:
   - Configured and run a client application
 
 ### Learn more
