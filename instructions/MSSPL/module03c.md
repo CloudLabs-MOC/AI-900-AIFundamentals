@@ -27,19 +27,21 @@ You can use the Face service by creating a **Face** resource. (Face API is no lo
 
     ![](../media/2-7-25-m3-1.png)
 
-1. In the **Face** service card, click on the **Create** dropdown **(1)**, then select **Face (2)** from the list.
+1. In the **Face** service card, click on the **Create** **(1)** dropdown, then select **Face (2)** from the list.
 
     ![](../media/2-7-25-m3-2.png)
 
-1. Create a **Face** resource with the following settings and then click on **Review + create (6)**. 
+1. Create a **Face** resource by entering the following details under **Project Details**: 
 
-    - Subscription: *Use existing Azure subscription* **(1)**
+    - Subscription: **Use existing Azure subscription** **(1)**
     - Resource group: **ai-service-<inject key="DeploymentID" enableCopy="false"/> (2)**
     - Region:  **<inject key="Region" enableCopy="false"/> (3)**
     - Name: Enter **aiface-<inject key="DeploymentID" enableCopy="false"/> (4)**
     - Pricing tier: **Standard S0 (5)**
 
-      ![](../media/2-7-25-m3-3.png)
+   Once all fields are filled, click **Review + create (6)** to proceed.
+   
+   ![](../media/2-7-25-m3-3.png)
    
 1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page.
 
@@ -106,8 +108,7 @@ To test the capabilities of the Face service, we'll use a simple command-line ap
     
     ![An image of a person with their face outlined](../media/create-face-solutions/ai900_03c-8.jpg)
     ![An image of a person with their face outlined](../media/2-7-25-m3-8.png)
-    >**Note :**
-    >Face service capabilities that return personally identifiable features are restricted. See https://azure.microsoft.com/blog/responsible-ai-investments-and-safeguards-for-facial-recognition/ for details.
+    >**Note:** Face service capabilities that return personally identifiable features are restricted. See https://azure.microsoft.com/blog/responsible-ai-investments-and-safeguards-for-facial-recognition/ for details.
 
 1. Now let's try another image:
 
