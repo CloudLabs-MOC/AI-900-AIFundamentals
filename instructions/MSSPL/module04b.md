@@ -57,11 +57,11 @@ To test the capabilities of the Translation service, we'll use a simple command-
 
 1. Don't worry too much about the details of the code; the important thing is that it needs the region/location and either of the keys for your Azure AI Services resource. 
 
-1. Navigate to **ai-service-<inject key="DeploymentID" enableCopy="false"/>**, In the resource group, select the **aiservice-<inject key="DeploymentID" enableCopy="false"/> (1)**  resource with the type **Azure AI services multi-service account**.
+1. Navigate to **ai-service-<inject key="DeploymentID" enableCopy="false"/>**, In the resource group, select the **aiservice-<inject key="DeploymentID" enableCopy="false"/>**  resource with the type **Azure AI services multi-service account**.
 
    ![The editor containing code to use the Translator service](../media/2-7-25-m4-2.png)
    
-1. In the left menu, go to**Keys and Endpoints (1)**. copy the values of **KEY 1 (2)** and **Location/Region (3)** value from the **Keys and Endpoints** page. Paste them into the code editor.
+1. In the left menu, go to **Keys and Endpoints (1)**. copy the values of **KEY 1 (2)** and **Location/Region (3)** value from the **Keys and Endpoints** page. Paste them into the code editor.
    
       ![Find the key and endpoint tab in your Azure AI Services resource's left hand pane.](../media/2-7-25-m4-3.png)
 
@@ -71,7 +71,7 @@ To test the capabilities of the Translation service, we'll use a simple command-
 
     ![The editor containing code to use the Translator service](../media/2-7-25-m4-4.png)
 
-1. Hit **Ctrl+S** to save the changes that have been made. Press **Ctrl+Q** to close the code editor window.
+1. Press **Ctrl+S** to save the changes that have been made. Press **Ctrl+Q** to close the code editor window.
 
 1. Make sure you are in the **ai-search** folder. If not, run the below command to move into the folder.
 
