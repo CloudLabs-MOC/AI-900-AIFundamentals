@@ -24,7 +24,7 @@ In this task, you will create an Azure AI Services resource in the Azure portal 
 
    ![](../media/analyze-images-computer-vision-service/create-resource.png)
 
-1. Search for **Azure AI services (1)** and select **Azure AI services (2)**.
+1. In the **Create a resource** page: Enter **Azure AI services** in the search bar **(1)**. From the results, select **azure ai services (2)** from the dropdown list..
 
     ![](../media/gt1.png)
 
@@ -32,7 +32,7 @@ In this task, you will create an Azure AI Services resource in the Azure portal 
 
    ![](../media/analyze-images-computer-vision-service/gt2.png)
 
-1. On the **Create Azure AI services** tab, provide the following settings:
+1. On the **Create Azure AI services** tab, under **Project Details**, provide the following settings:
 
     - Subscription: **Your Azure subscription (1)**
     - Resource group: Select **ai-service-<inject key="DeploymentID" enableCopy="false"/>** **(2)**
@@ -73,7 +73,7 @@ In this task, you will set up Azure Cloud Shell with PowerShell to prepare the e
 
     ![](../media/analyze-images-computer-vision-service/cl.png)
 
-    >**Note:** If you are not able to see the **[\>_]** button, click on the **ellipses(...) (1)** to the right of the search bar at the top of the page and then select **Cloud Shell (2)** from the drop down options.
+    >**Note:** If you are not able to see the **[\>_]** button, click on the **ellipses(...) (1)** to the right of the search bar at the top of the page and then select **Cloud Shell  **[>_]** (2)** from the drop down options.
 
     ![](../media/2-7-25-m1-3.png)
 
@@ -126,7 +126,7 @@ In this task, you will modify a sample client application with your resource det
     ```PowerShell
     code .
     ```
-   ![](../media/2-7-25-m1-7.png)
+   ![](../media/2-7-25-m1-8.png)
 
    >**Note**: If you get Switch to Classic Cloud Shell, click on **Confirm** and run the previous command again.
 
