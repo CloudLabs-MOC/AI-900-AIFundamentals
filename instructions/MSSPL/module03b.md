@@ -49,7 +49,7 @@ To train an object detection model, you need to create a Custom Vision project b
     - Description: **Object detection for road safety** **(2)**
     - Resource: **aiservice-<inject key="DeploymentID" enableCopy="false"/> [SO]** **(3)**
 
-        >**Note**: Under the **Resource** dropdown, if you don't find the resource that you created previously in the Azure portal, kindly refresh the page and reperform the task.    
+        >**Note**: Under the **Resource** dropdown, if you don't find the resource that you created previously in the Azure portal, kindly refresh the page and re-perform the task.    
 
     - Project Types: **Object Detection** **(4)**
     - Domains: **General \[A1]** **(5)**
