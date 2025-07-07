@@ -43,7 +43,7 @@ You can use the Face service by creating a **Face** resource. (Face API is no lo
    
    ![](../media/2-7-25-m3-3.png)
    
-1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page.
+1. After successfully completing the validation process, click on the **Create** button located in the lower-left corner of the page.
 
     ![](../media/gt48.png)
    
@@ -139,7 +139,6 @@ To test the capabilities of the Face service, we'll use a simple command-line ap
 
    ![An image of a person with their face outlined](../media/2-7-25-m3-12.png)
    ![An image of a person with their face outlined](../media/2-7-25-m3-10.png)
-
 
 <validation step="481c05b1-591f-4f2d-b178-8e886446aa22" />
 
