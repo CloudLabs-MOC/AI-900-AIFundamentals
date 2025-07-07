@@ -27,7 +27,7 @@ To test the capabilities of the Translation service, we'll use a simple command-
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/analyze-images-computer-vision-service/powershell-portal-guide-1(1).png)
 
-1. If you see the Cloud Shell timed out window, select **Reconnect**; otherwise, proceed with the next Task.
+1. If you see the Cloud Shell timed-out window, select **Reconnect**; otherwise, proceed with the next Task.
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/azure-ai-search-lab4-2.png)
 
@@ -43,7 +43,7 @@ To test the capabilities of the Translation service, we'll use a simple command-
 
     ![The code editor.](../media/powershell-portal-guide-4.png)
 
-1. If the code editor is not opened, please re-enter the below command **(1)**, then you will be to see the code editor **(2)**. 
+1. If the code editor is not opened, please re-enter the below command **(1)**, and then you will be able to see the code editor **(2)**. 
 
     ```PowerShell
     code .
