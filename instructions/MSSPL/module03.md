@@ -45,7 +45,7 @@ In this task, you will create an Azure AI Services resource in the Azure portal 
 
       ![](../media/gt3.png)
 
-1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page.
+1. After successfully completing the validation process, click on the **Create** button located in the lower-left corner of the page.
 
     ![](../media/gt4.png)
 
@@ -57,7 +57,7 @@ In this task, you will create an Azure AI Services resource in the Azure portal 
 
     ![](../media/2-7-25-m1-1.png)
 
-1. Navigate to the **Keys and Endpoint (1)** page from the left pane under **Resource Management** for your Azure AI services resource. You will need the endpoint and keys to connect from client applications.  Copy and paste the **KEY 1 (1)** and **Endpoint (2)** value to Notepad for future reference to connect from client applications.
+1. Navigate to the **Keys and Endpoint (1)** page from the left pane under **Resource Management** for your Azure AI services resource. You will need the endpoint and keys to connect from client applications.  Copy and paste the **KEY 1 (2)** and **Endpoint (3)** values to Notepad for future reference to connect from client applications.
 
     ![](../media/2-7-25-m1-2.png)
 
