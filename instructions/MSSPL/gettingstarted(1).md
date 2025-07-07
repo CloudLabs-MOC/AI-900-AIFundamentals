@@ -29,7 +29,7 @@ Participants should have the following prerequisites:
 
 ## Architecture
 
-The lab architecture leverages a range of Microsoft Azure services and tools to provide hands-on experience with cloud computing, AI, and security practices. Using the Azure Portal, users can provision and manage resources like **Azure AI Services**, which include **Custom Vision**, **Face API**, and **Azure AI services multi-service**. PowerShell or Cloud Shell is used to execute scripts for provisioning and managing these resources. The lab encourages interaction with APIs and endpoints to connect client applications with Azure services, enabling real-time data processing and analysis. Additionally, a focus on security best practices ensures proper handling of authentication, keys, and resource protection. Participants will build, deploy, and test AI models and applications for various use cases, such as image recognition, face detection, and language translation, while developing a deeper understanding of cloud architecture, AI tools, and secure cloud operations..
+The lab architecture leverages a range of Microsoft Azure services and tools to provide hands-on experience with cloud computing, AI, and security practices. Using the Azure Portal, users can provision and manage resources like **Azure AI Services**, which include **Custom Vision**, **Face API**, and **Azure AI Services multi-service**. PowerShell or Cloud Shell is used to execute scripts for provisioning and managing these resources. The lab encourages interaction with APIs and endpoints to connect client applications with Azure services, enabling real-time data processing and analysis. Additionally, a focus on security best practices ensures proper handling of authentication, keys, and resource protection. Participants will build, deploy, and test AI models and applications for various use cases, such as image recognition, face detection, and language translation, while developing a deeper understanding of cloud architecture, AI tools, and secure cloud operations..
 
 ## Architecture Diagram
 
@@ -75,7 +75,7 @@ To get a better understanding of your lab resources and credentials, navigate to
  
 For convenience, you can open the guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-![Create storage by clicking confirm.](../media/gg2.png)
+![Create storage by clicking confirm.](../media/g-1.png)
  
 ## Managing Your Virtual Machine
  
@@ -104,7 +104,7 @@ Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from
  
       ![](../media/GS2.png "Enter Email")
  
-3. Next, provide your password:
+3. Next, provide your password and click on **Sign in**
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
