@@ -69,13 +69,13 @@ Your virtual machine is your workhorse throughout the workshop. The guide is you
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-![Create storage by clicking confirm.](../media/gg1.png)
+![Create storage by clicking confirm.](../media/updtenv.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-![Create storage by clicking confirm.](../media/g-1.png)
+![Create storage by clicking confirm.](../media/updatedsplit.png)
  
 ## Managing Your Virtual Machine
  
