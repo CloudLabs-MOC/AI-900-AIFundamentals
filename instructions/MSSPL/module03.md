@@ -12,7 +12,7 @@ For example, suppose the fictitious retailer Northwind Traders has decided to im
 
 You will be able to complete the following tasks:
 
-  - Task 1: Azure AI Services resource
+  - Task 1: Create an Azure AI Services resource
   - Task 2: Run Cloud Shell
   - Task 3: Configure and run a client application
 
@@ -24,7 +24,7 @@ In this task, you will create an Azure AI Services resource in the Azure portal 
 
    ![](../media/analyze-images-computer-vision-service/create-resource.png)
 
-1. In the **Create a resource** page: Enter **Azure AI services** in the search bar **(1)**. From the results, select **azure ai services (2)** from the dropdown list..
+1. In the **Create a resource** page: Enter **Azure AI services (1)** in the search bar. From the results, select **azure ai services (2)** from the dropdown list..
 
     ![](../media/gt1.png)
 
@@ -77,7 +77,7 @@ In this task, you will set up Azure Cloud Shell with PowerShell to prepare the e
 
     ![](../media/2-7-25-m1-3.png)
 
-1. On the Getting started, select **Mount storage account (1)** and select your subscription under storage account subscription **(2)**. Click on **Apply (3)**.
+1. On the Getting started, select **Mount storage account (1)** and select your **subscription(2)** under Storage account subscription . Click on **Apply (3)**.
 
    ![](../media/2-7-25-m1-4.png)
 

@@ -69,13 +69,13 @@ Your virtual machine is your workhorse throughout the workshop. The guide is you
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-![Create storage by clicking confirm.](../media/updtenv.png)
+![Create storage by clicking confirm.](/instructions/media/updtenv.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-![Create storage by clicking confirm.](../media/updatedsplit.png)
+![Create storage by clicking confirm.](/instructions/media/updatedsplit.png)
  
 ## Managing Your Virtual Machine
  
@@ -94,11 +94,11 @@ Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from
 
 ## Let's Get Started with Azure Portal
  
-1. On your virtual machine, click on the Azure Portal icon as shown below:
+1. On your virtual machine, click on the **Azure Portal** icon as shown below:
  
     ![](../media/GS1.png)
  
-1. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
+1. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials and click on **Next**:
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
