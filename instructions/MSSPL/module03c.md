@@ -154,3 +154,5 @@ In this lab, you have covered the following:
 This simple app shows only some of the capabilities of the Face service. To learn more about what you can do with this service, see the [Face API page](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-identity).
 
 ### You have successfully completed the lab. Click on Next from the bottom right corner.
+
+![Create storage by clicking confirm.](../media/gg3.png)
