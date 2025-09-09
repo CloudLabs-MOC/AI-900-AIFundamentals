@@ -288,3 +288,5 @@ In this lab, you have covered the following:
 This exercise shows only some of the capabilities of the Custom Vision service. To learn more about what you can do with this service, see the [Custom Vision page](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/).
 
 ### You have successfully completed the lab. Click on Next from the bottom right corner.
+
+![Create storage by clicking confirm.](../media/gg3.png)
