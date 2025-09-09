@@ -218,3 +218,5 @@ In this lab, you have covered the following:
 -    Configured and executed a client application for image analysis.
 
 ### You have successfully completed the lab. Click on Next from the bottom right corner.
+
+![Create storage by clicking confirm.](../media/gg3.png)
