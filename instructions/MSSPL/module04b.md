@@ -103,3 +103,5 @@ This simple app shows only some of the capabilities of the Translator service. T
 In this lab **Getting started with Azure AI services**, we explored the end-to-end workflow of using Azure AI Services. We began by creating and configuring AI resources, running applications through Cloud Shell, and integrating them with client applications. We then worked with Custom Vision, where we created a project, added and tagged images, trained and tested a model, and published it for real world use. Additionally, we implemented the Face API and validated its functionality through a client application. We configured and ran a client application using Azure AI Translator to translate text and audio across languages. Overall, this hands-on experience demonstrated how Azure AI services can be effectively leveraged to build, train, deploy, and test intelligent applications with ease and scalability.
 
 ### You have successfully completed the lab.
+
+![Create storage by clicking confirm.](../media/gg3.png)
