@@ -27,6 +27,45 @@ You will be able to complete the following tasks:
 
 To train an object detection model, you need to create a Custom Vision project based on your training resource. To do this, you'll use the Custom Vision portal.
 
+1. In the Azure Portal, using the search bar, search for **Custom vision (1)**, select **Custom vision (2)** from the result.
+
+    ![](../media/l27t1p1.png)
+
+1. On **AI Foundry | Custom vision** blade, click on **+ Create**.
+
+    ![](../media/l27t1p2.png)
+
+1. Provision the resource using the following settings and then click on **Review + create (8)**:
+
+    - Create options: **Both (1)**
+    - Subscription: **Choose Default Subscription (2)**
+    - Resource group: **ai-service-<inject key="DeploymentID" enableCopy="false"/>** **(3)**
+    - Region: **<inject key="Region" enableCopy="false"/>** **(4)**
+    - Name: **customvision<inject key="DeploymentID" enableCopy="false"/> (5)**
+    - Training pricing tier: **Standard S0 (6)**
+    - Prediction pricing tier: **Standard S0 (7)**
+
+    ![](../media/createcv1.png)
+
+    ![](../media/createcv2.png)
+
+1. On the **Review + create** tab, click **Create** to provision the resource.
+
+
+    ![](../media/createcv3.png)
+
+1. Create the resource and wait for deployment to complete, and then view the deployment details. Note that two Custom Vision resources are provisioned; one for training, and another for prediction.
+
+    > **Note**: Each resource has its own *endpoint* and *keys*, which are used to manage access from your code. To train an image classification model, your code must use the *training* resource (with its endpoint and key); and to use the trained model to predict image classes, your code must use the *prediction* resource (with its endpoint and key).
+
+1. When the resources have been deployed, click on **Go to resource group** to view them.
+
+    ![](../media/gotprg.png)
+
+1. You should see two custom vision resources, one with the **<inject key="DeploymentID" enableCopy="false"/>-Prediction**.
+
+    ![](../media/cust2.png)
+
 1. In a new browser tab, open the Custom Vision portal at [https://customvision.ai](https://customvision.ai?azure-portal=true)
 
 1. Click on **Sign in.**
@@ -47,7 +86,7 @@ To train an object detection model, you need to create a Custom Vision project b
 
     - Name: **Traffic Safety** **(1)**
     - Description: **Object detection for road safety** **(2)**
-    - Resource: **aiservice-<inject key="DeploymentID" enableCopy="false"/> [SO]** **(3)**
+    - Resource: **customvision-<inject key="DeploymentID" enableCopy="false"/>** **(3)**
 
         >**Note**: Under the **Resource** dropdown, if you don't find the resource that you created previously in the Azure portal, kindly refresh the page and re-perform the task.    
 
@@ -55,7 +94,7 @@ To train an object detection model, you need to create a Custom Vision project b
     - Domains: **General \[A1]** **(5)**
     - Click on **Create Project (6)**
 
-      ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/2-7-25-m2-3.png)
+      ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/createproj.png)
     
 1. Wait for the project to be created and opened in the browser.
 
@@ -288,3 +327,5 @@ In this lab, you have covered the following:
 This exercise shows only some of the capabilities of the Custom Vision service. To learn more about what you can do with this service, see the [Custom Vision page](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/).
 
 ### You have successfully completed the lab. Click on Next from the bottom right corner.
+
+![Create storage by clicking confirm.](../media/gg3.png)
