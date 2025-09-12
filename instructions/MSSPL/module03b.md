@@ -29,11 +29,11 @@ To train an object detection model, you need to create a Custom Vision project b
 
 1. In the Azure Portal, using the search bar, search for **`Custom vision` (1)**, select **Custom vision (2)** from the result.
 
-    ![](../media/createcv1.png)
+    ![](../media/l27t1p1.png)
 
 1. On **AI Foundry | Custom vision** blade, click on **+ Create**.
 
-    ![](../media/createcv2.png)
+    ![](../media/l27t1p2.png)
 
 1. Provision the resource using the following settings and then click on **Review + create**:
 
