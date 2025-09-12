@@ -27,7 +27,7 @@ You will be able to complete the following tasks:
 
 To train an object detection model, you need to create a Custom Vision project based on your training resource. To do this, you'll use the Custom Vision portal.
 
-1. In the Azure Portal, using the search bar, search for **`Custom vision` (1)**, select **Custom vision (2)** from the result.
+1. In the Azure Portal, using the search bar, search for **Custom vision (1)**, select **Custom vision (2)** from the result.
 
     ![](../media/l27t1p1.png)
 
@@ -35,21 +35,22 @@ To train an object detection model, you need to create a Custom Vision project b
 
     ![](../media/l27t1p2.png)
 
-1. Provision the resource using the following settings and then click on **Review + create**:
+1. Provision the resource using the following settings and then click on **Review + create (8)**:
 
     - Create options: **Both (1)**
     - Subscription: **Choose Default Subscription (2)**
-    - Resource group: **AI-102-RG27 (3)**
-    - Region: **<inject key="Region" enableCopy="false" /> (4)**
+    - Resource group: **ai-service-<inject key="DeploymentID" enableCopy="false"/>** **(3)**
+    - Region: **<inject key="Region" enableCopy="false"/>** **(4)**
     - Name: **customvision<inject key="DeploymentID" enableCopy="false"/> (5)**
-    - Training pricing tier: **F0 (6)**
-    - Prediction pricing tier: **F0 (7)**
+    - Training pricing tier: **Standard S0 (6)**
+    - Prediction pricing tier: **Standard S0 (7)**
 
     ![](../media/createcv1.png)
 
+    ![](../media/createcv2.png)
+
 1. On the **Review + create** tab, click **Create** to provision the resource.
 
-    ![](../media/createcv2.png)
 
     ![](../media/createcv3.png)
 
@@ -61,7 +62,7 @@ To train an object detection model, you need to create a Custom Vision project b
 
     ![](../media/gotprg.png)
 
-1. You should see two custom vision resources, one with the **-Prediction**.
+1. You should see two custom vision resources, one with the **<inject key="DeploymentID" enableCopy="false"/>-Prediction**.
 
     ![](../media/cust2.png)
 
@@ -85,7 +86,7 @@ To train an object detection model, you need to create a Custom Vision project b
 
     - Name: **Traffic Safety** **(1)**
     - Description: **Object detection for road safety** **(2)**
-    - Resource: **aiservice-<inject key="DeploymentID" enableCopy="false"/> [SO]** **(3)**
+    - Resource: **customvision-<inject key="DeploymentID" enableCopy="false"/>** **(3)**
 
         >**Note**: Under the **Resource** dropdown, if you don't find the resource that you created previously in the Azure portal, kindly refresh the page and re-perform the task.    
 
