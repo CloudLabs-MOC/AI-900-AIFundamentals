@@ -24,7 +24,7 @@ In this task, you will create an Azure AI Services resource in the Azure portal 
 
    ![](../media/analyze-images-computer-vision-service/create-resource.png)
 
-1. In the **Create a resource** page: Enter **Azure AI services (1)** in the search bar. From the results, select **azure ai services (2)** from the dropdown list..
+1. In the **Create a resource** page: Enter **Azure AI services (1)** in the search bar. From the results, select **azure ai services (2)** from the dropdown list.
 
     ![](../media/gt1.png)
 
@@ -77,7 +77,7 @@ In this task, you will set up Azure Cloud Shell with PowerShell to prepare the e
 
     ![](../media/2-7-25-m1-3.png)
 
-1. On the Getting started, select **Mount storage account (1)** and select your **subscription(2)** under Storage account subscription . Click on **Apply (3)**.
+1. On the Getting started, select **Mount storage account (1)** and select your **subscription(2)** under Storage account subscription. Click on **Apply (3)**.
 
    ![](../media/2-7-25-m1-4.png)
 
@@ -85,7 +85,7 @@ In this task, you will set up Azure Cloud Shell with PowerShell to prepare the e
 
     ![](../media/2-7-25-m1-5.png)
 
-1. On the Create storage account tab, provide the details and select **Create (6)**
+1. On the Create storage account tab, provide the details and select **Create (6)**:
 
     | Settings | Values |
     |  -- | -- |
@@ -222,6 +222,6 @@ In this lab, you have covered the following:
 -    Set up and utilized Azure Cloud Shell.
 -    Configured and executed a client application for image analysis.
 
-### You have successfully completed the lab. Click on Next from the bottom right corner.
+## You have successfully completed the lab. Click on Next from the bottom right corner.
 
 ![Create storage by clicking confirm.](../media/gg3.png)

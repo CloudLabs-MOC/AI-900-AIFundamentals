@@ -1,6 +1,6 @@
 # Getting started with Azure AI services
 
-### Overall Estimated Duration: 4 Hours
+## Overall Estimated Duration: 4 Hours
 
 ## Overview
 
@@ -29,7 +29,7 @@ Participants should have the following prerequisites:
 
 ## Architecture
 
-The lab architecture leverages a range of Microsoft Azure services and tools to provide hands-on experience with cloud computing, AI, and security practices. Using the Azure Portal, users can provision and manage resources like **Azure AI Services**, which include **Custom Vision**, **Face API**, and **Azure AI Services multi-service**. PowerShell or Cloud Shell is used to execute scripts for provisioning and managing these resources. The lab encourages interaction with APIs and endpoints to connect client applications with Azure services, enabling real-time data processing and analysis. Additionally, a focus on security best practices ensures proper handling of authentication, keys, and resource protection. Participants will build, deploy, and test AI models and applications for various use cases, such as image recognition, face detection, and language translation, while developing a deeper understanding of cloud architecture, AI tools, and secure cloud operations..
+The lab architecture leverages a range of Microsoft Azure services and tools to provide hands-on experience with cloud computing, AI, and security practices. Using the Azure Portal, users can provision and manage resources like **Azure AI Services**, which include **Custom Vision**, **Face API**, and **Azure AI Services multi-service**. PowerShell or Cloud Shell is used to execute scripts for provisioning and managing these resources. The lab encourages interaction with APIs and endpoints to connect client applications with Azure services, enabling real-time data processing and analysis. Additionally, a focus on security best practices ensures proper handling of authentication, keys, and resource protection. Participants will build, deploy, and test AI models and applications for various use cases, such as image recognition, face detection, and language translation, while developing a deeper understanding of cloud architecture, AI tools, and secure cloud operations.
 
 ## Architecture Diagram
 
@@ -57,11 +57,11 @@ Once you're ready to dive in, your virtual machine and **Guide** will be right a
 
 ## Lab Guide Zoom In/Zoom Out
 
-1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the upper-right corner of the lab environment.
+To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the upper-right corner of the lab environment.
 
-   ![Create storage by clicking confirm.](../media/rag5.png)
+![Create storage by clicking confirm.](../media/rag5.png)
 
-### Virtual Machine & Lab Guide
+## Virtual Machine & Lab Guide
  
 Your virtual machine is your workhorse throughout the workshop. The guide is your roadmap to success.
  
@@ -160,4 +160,4 @@ Now, click on **Next** from the lower right corner to move on to the next page.
 
 ![Create storage by clicking confirm.](../media/gg3.png)
 
-### Happy Learning!!
+## Happy Learning!!

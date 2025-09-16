@@ -53,7 +53,7 @@ To train an object detection model, you need to create a Custom Vision project b
 
     ![](../media/createcv3.png)
 
-1. Create the resource and wait for deployment to complete, and then view the deployment details. Note that two Custom Vision resources are provisioned; one for training, and another for prediction.
+1. Create the resource and wait for deployment to complete and then view the deployment details. Note that two Custom Vision resources are provisioned: one for training, and another for prediction.
 
     > **Note**: Each resource has its own *endpoint* and *keys*, which are used to manage access from your code. To train an image classification model, your code must use the *training* resource (with its endpoint and key); and to use the trained model to predict image classes, your code must use the *prediction* resource (with its endpoint and key).
 
@@ -65,7 +65,7 @@ To train an object detection model, you need to create a Custom Vision project b
 
     ![](../media/cust2.png)
 
-1. In a new browser tab, open the Custom Vision portal at [https://customvision.ai](https://customvision.ai?azure-portal=true)
+1. In a new browser tab, open the Custom Vision portal at [https://customvision.ai](https://customvision.ai?azure-portal=true).
 
 1. Click on **Sign in.**
 
@@ -77,7 +77,7 @@ To train an object detection model, you need to create a Custom Vision project b
 
      ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/2-7-25-m2-1.png)
 
-1. On the **Custom Vision** page, click **NEW PROJECT**
+1. On the **Custom Vision** page, click **NEW PROJECT**.
 
    ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/2-7-25-m2-2.png)
 
@@ -107,7 +107,7 @@ To train an object detection model, you need to upload images that contain the c
 
     ![](../media/gt21.png)
 
-1. Right click on the **road-safty zip file** **(1)** and select **Extract all (2)** to extract the training images. 
+1. Right click on the **road-safety zip file** **(1)** and select **Extract all (2)** to extract the training images. 
 
     ![](../media/gt22.png)
 
@@ -322,6 +322,6 @@ In this lab, you have covered the following:
 
 This exercise shows only some of the capabilities of the Custom Vision service. To learn more about what you can do with this service, see the [Custom Vision page](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/).
 
-### You have successfully completed the lab. Click on Next from the bottom right corner.
+## You have successfully completed the lab. Click on Next from the bottom right corner.
 
 ![Create storage by clicking confirm.](../media/gg3.png)
