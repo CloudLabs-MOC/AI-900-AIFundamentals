@@ -140,6 +140,11 @@ To test the capabilities of the Face service, we'll use a simple command-line ap
    ![An image of a person with their face outlined](../media/2-7-25-m3-12.png)
    ![An image of a person with their face outlined](../media/2-7-25-m3-10.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 <validation step="481c05b1-591f-4f2d-b178-8e886446aa22" />
 
 ## Summary

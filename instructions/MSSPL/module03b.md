@@ -309,8 +309,6 @@ Hopefully, your object detection model did a good job of detecting pedestrians a
 
    ![Photograph of a group of pedestrians.](../media/ai900mod3bimg12.png)
 
-<validation step="3ee17fce-96a5-444e-8e5d-5e28cd8024a7" />
-
 ## Summary
 
 In this lab, you have covered the following:
