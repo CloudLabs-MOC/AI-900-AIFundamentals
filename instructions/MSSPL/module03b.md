@@ -51,7 +51,6 @@ To train an object detection model, you need to create a Custom Vision project b
 
 1. On the **Review + create** tab, click **Create** to provision the resource.
 
-
     ![](../media/createcv3.png)
 
 1. Create the resource and wait for deployment to complete, and then view the deployment details. Note that two Custom Vision resources are provisioned; one for training, and another for prediction.
@@ -204,8 +203,7 @@ Now you're ready to publish your trained model and use it from a client applicat
 
 1. In the **top-left corner** of the **Performance** tab, click the **&#128504; Publish** button to make the trained iteration available for predictions.
 
-
-   ![Photograph of a group of pedestrians.](../media/2-7-25-m2-9.png)
+   ![group of pedestrians.](../media/2-7-25-m2-9.png)
  
 1. Publish the trained model with the following settings:
     
