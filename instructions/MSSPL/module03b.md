@@ -208,10 +208,10 @@ Now you're ready to publish your trained model and use it from a client applicat
 1. Publish the trained model with the following settings:
     
     - Model name: **traffic-safety** **(1)**
-    - Prediction resource: Select **aiservice-<inject key="DeploymentID" enableCopy="false"/> (2)**
+    - Prediction resource: Select **customvision-<inject key="DeploymentID" enableCopy="false"/> (2)**
     - Click **Publish (3)**
 
-      ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/2-7-25-m2-10.png)
+      ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/publishmodel.png)
 
 1. After publishing, click the **Prediction URL** (&#127760;) icon to see the information required to use the published model.
 
@@ -219,7 +219,7 @@ Now you're ready to publish your trained model and use it from a client applicat
        
 1. Later, you will need the **appropriate URL** and **Prediction-Key** values to get a prediction from an Image URL, so keep this dialog box open and carry on to the next task.
 
-   ![](../media/gt38.png)
+   ![](../media/API1.png)
 
 ## Task 5: Prepare a client application
 
@@ -254,7 +254,7 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 
     Click on the **Prediction URL** to get the **Prediction URL (1)** and **Prediction key (2)** from the dialog box you left open in the browser tab for your Custom Vision project. You need the versions to be used *if you have an image URL*.
 
-    ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/2-7-25-m2-12.png)
+    ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/predkey.png)
 
     Use these values to replace the **YOUR_PREDICTION_URL** and **YOUR_PREDICTION_KEY** placeholders in the code file.
     After pasting the Prediction URL and Prediction Key values, the first two lines of code should look similar to this:
