@@ -322,6 +322,13 @@ In this lab, you have covered the following:
 
 This exercise shows only some of the capabilities of the Custom Vision service. To learn more about what you can do with this service, see the [Custom Vision page](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/).
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="3ee17fce-96a5-444e-8e5d-5e28cd8024a7" />
+
 ### You have successfully completed the lab. Click on Next from the bottom right corner.
 
 ![Create storage by clicking confirm.](../media/gg3.png)
