@@ -1,6 +1,6 @@
 # Lab 04: Translate text and audio with Azure AI Translator
 
-## Estimated Duration: 60 Minutes
+### Estimated Duration: 60 Minutes
 
 ## Overview
 
@@ -48,11 +48,11 @@ To test the capabilities of the Translation service, we'll use a simple command-
     code .
     ```
 
-     ![](../media/analyze-images-computer-vision-service/gt10.png)     
+     ![](../media/az8.png)     
 
 1. In the **Files** pane on the left, expand **ai-search (1)** and select **translator.ps1 (2)**. This file contains some code that uses the Translator service:
 
-    ![The editor containing code to use the Translator service](../media/2-7-25-m4-1.png)
+    ![The editor containing code to use the Translator service](../media/az23.png)
 
 1. Don't worry too much about the details of the code; the important thing is that it needs the region/location and either of the keys for your Azure AI Services resource. 
 

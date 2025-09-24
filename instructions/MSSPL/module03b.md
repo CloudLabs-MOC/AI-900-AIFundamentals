@@ -1,6 +1,6 @@
 # Lab 02: Detect objects with Azure AI Custom Vision
 
-## Estimated Duration: 60 Minutes
+### Estimated Duration: 60 Minutes
 
 ## Overview
 
@@ -25,7 +25,7 @@ You will be able to complete the following tasks:
 
 ## Task 1: Create a Custom Vision project
 
-To train an object detection model, you need to create a Custom Vision project based on your training resource. To do this, you'll use the Custom Vision portal.
+To train an object detection model, you need to create a Custom Vision project based on your training resource. To do this, you will use the Custom Vision portal.
 
 1. In the Azure Portal, using the search bar, search for **Custom vision (1)**, select **Custom vision (2)** from the result.
 
@@ -45,13 +45,11 @@ To train an object detection model, you need to create a Custom Vision project b
     - Training pricing tier: **Standard S0 (6)**
     - Prediction pricing tier: **Standard S0 (7)**
 
-    ![](../media/createcv1.png)
-
-    ![](../media/createcv2.png)
+      ![](../media/az13.png)
 
 1. On the **Review + create** tab, click **Create** to provision the resource.
 
-    ![](../media/createcv3.png)
+    ![](../media/az14.png)
 
 1. Create the resource and wait for deployment to complete and then view the deployment details. Note that two Custom Vision resources are provisioned: one for training, and another for prediction.
 
@@ -59,11 +57,11 @@ To train an object detection model, you need to create a Custom Vision project b
 
 1. When the resources have been deployed, click on **Go to resource group** to view them.
 
-    ![](../media/gotprg.png)
+    ![](../media/az15.png)
 
 1. You should see two custom vision resources, one with the **<inject key="DeploymentID" enableCopy="false"/>-Prediction**.
 
-    ![](../media/cust2.png)
+    ![](../media/az16.png)
 
 1. In a new browser tab, open the Custom Vision portal at [https://customvision.ai](https://customvision.ai?azure-portal=true).
 
@@ -161,7 +159,7 @@ To train an object detection model, you need to upload images that contain the c
 
 ## Task 3: Train and test a model
 
-Now that you've tagged the images in your project, you're ready to train a model.
+Now that you have tagged the images in your project, you're ready to train a model.
 
 1. In the Custom Vision project, click the **&#9881; Train** button to begin training your object detection model using the tagged images.
    
@@ -199,7 +197,7 @@ Now that you've tagged the images in your project, you're ready to train a model
 
 ## Task 4: Publish the object detection model
 
-Now you're ready to publish your trained model and use it from a client application.
+Now you are ready to publish your trained model and use it from a client application.
 
 1. In the **top-left corner** of the **Performance** tab, click the **&#128504; Publish** button to make the trained iteration available for predictions.
 
@@ -211,7 +209,7 @@ Now you're ready to publish your trained model and use it from a client applicat
     - Prediction resource: Select **customvision-<inject key="DeploymentID" enableCopy="false"/> (2)**
     - Click **Publish (3)**
 
-      ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/publishmodel.png)
+      ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/az17.png)
 
 1. After publishing, click the **Prediction URL** (&#127760;) icon to see the information required to use the published model.
 
@@ -248,7 +246,7 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 
 1. In the **Files** pane on the left, expand **ai-search (1)** and select **detect-objects.ps1 (2)**. 
 
-   ![](../media/2-7-25-m2-11.png)
+   ![](../media/az18.png)
 
 1. Don't worry too much about the details of the code. The important thing is that it starts with some code to specify the prediction URL and key for your Custom Vision model. You'll need to update these so that the rest of the code uses your model.
 
