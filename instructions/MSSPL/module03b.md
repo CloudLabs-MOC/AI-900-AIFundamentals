@@ -25,7 +25,7 @@ You will be able to complete the following tasks:
 
 ## Task 1: Create a Custom Vision project
 
-To train an object detection model, you need to create a Custom Vision project based on your training resource. To do this, you'll use the Custom Vision portal.
+To train an object detection model, you need to create a Custom Vision project based on your training resource. To do this, you will use the Custom Vision portal.
 
 1. In the Azure Portal, using the search bar, search for **Custom vision (1)**, select **Custom vision (2)** from the result.
 
