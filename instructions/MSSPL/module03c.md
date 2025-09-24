@@ -1,6 +1,6 @@
 # Lab 03: Analyze images with Azure AI Face API
 
-## Estimated Duration: 60 Minutes
+### Estimated Duration: 60 Minutes
 
 ## Overview
 
@@ -25,7 +25,7 @@ You can use the Face service by creating a **Face** resource. (Face API is no lo
 
 1. In the **Create a resource** page, type **face (1)** into the search bar. From the results, select **face (2)** under the available services.
 
-    ![](../media/2-7-25-m3-1.png)
+    ![](../media/az19.png)
 
 1. In the **Face** service card, click on the **Create** **(1)** dropdown, then select **Face (2)** from the list.
 
@@ -45,11 +45,11 @@ You can use the Face service by creating a **Face** resource. (Face API is no lo
    
 1. After successfully completing the validation process, click on the **Create** button located in the lower-left corner of the page.
 
-    ![](../media/gt48.png)
+    ![](../media/az20.png)
    
 1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button; this will take you to your Resource group.
 
-    ![](../media/2-7-25-m3-4.png)
+    ![](../media/az21.png)
 
 1. From the resource group overview, select the **aiface-<inject key="DeploymentID" enableCopy="false"/>** resource under the **Name** column with the type **Face API**.
 
@@ -76,7 +76,7 @@ To test the capabilities of the Face service, we'll use a simple command-line ap
 
 1. In the **Files** pane on the left, expand **ai-search (1)** and select **find-faces.ps1 (2)**. This file contains some code that uses the Face service to detect and analyze faces in an image, as shown here:
 
-    ![The editor containing code to detect faces in an image](../media/gt52.png)
+    ![The editor containing code to detect faces in an image](../media/az22.png)
 
 1. Don't worry too much about the details of the code; the important thing is that it needs the endpoint URL and either of the keys for your Face resource.
 
@@ -107,7 +107,9 @@ To test the capabilities of the Face service, we'll use a simple command-line ap
 1. Review the returned information, which includes the location of the face in the image. The location of a face is indicated by the top-left coordinates, and the width and height of a *bounding box*, as shown here:
     
     ![An image of a person with their face outlined](../media/create-face-solutions/ai900_03c-8.jpg)
+   
     ![An image of a person with their face outlined](../media/2-7-25-m3-8.png)
+   
     >**Note:** Face service capabilities that return personally identifiable features are restricted. See https://azure.microsoft.com/blog/responsible-ai-investments-and-safeguards-for-facial-recognition/ for details.
 
 1. Now let's try another image:
@@ -123,6 +125,7 @@ To test the capabilities of the Face service, we'll use a simple command-line ap
 1. Review the results of the face analysis for the second image.
 
    ![An image of a person with their face outlined](../media/2-7-25-m3-11.png)
+   
    ![An image of a person with their face outlined](../media/2-7-25-m3-9.png)
 
 1. Let's try one more:
@@ -138,6 +141,7 @@ To test the capabilities of the Face service, we'll use a simple command-line ap
 1. Review the results of the face analysis for the third image.
 
    ![An image of a person with their face outlined](../media/2-7-25-m3-12.png)
+   
    ![An image of a person with their face outlined](../media/2-7-25-m3-10.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
