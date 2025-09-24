@@ -26,7 +26,7 @@ In this task, you will create an Azure AI Services resource in the Azure portal 
 
 1. In the **Create a resource** page: Enter **Azure AI services (1)** in the search bar. From the results, select **azure ai services (2)** from the dropdown list.
 
-    ![](../media/gt1.png)
+    ![](../media/az2.png)
 
 1. Select **Create (1)** drop down under **Azure AI services** and select **Azure AI services (2)**.
 
@@ -43,19 +43,19 @@ In this task, you will create an Azure AI Services resource in the Azure portal 
 
     - Click **Review + create** **(7)**
 
-      ![](../media/gt3.png)
+      ![](../media/az3.png)
 
 1. After successfully completing the validation process, click on the **Create** button located in the lower-left corner of the page.
 
-    ![](../media/gt4.png)
+    ![](../media/az4.png)
 
 1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, which will take you to your resource group.
 
-    ![](../media/gt5.png)
+    ![](../media/az5.png)
 
 1. From the resource group overview, select the **aiservice-<inject key="DeploymentID" enableCopy="false"/>** resource listed under the **Name** column.
 
-    ![](../media/2-7-25-m1-1.png)
+    ![](../media/az6.png)
 
 1. Navigate to the **Keys and Endpoint (1)** page from the left pane under **Resource Management** for your Azure AI services resource. You will need the endpoint and keys to connect from client applications.  Copy and paste the **KEY 1 (2)** and **Endpoint (3)** values to Notepad for future reference to connect from client applications.
 
@@ -119,7 +119,7 @@ In this task, you will modify a sample client application with your resource det
     git clone https://github.com/CloudLabs-MOC/AI-900-AIFundamentals ai-search
     ```
 
-     ![](../media/analyze-images-computer-vision-service/gt9.png)    
+     ![](../media/az7.png)    
 
 1. The files are downloaded to a folder named **ai-search**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell:
 
@@ -140,11 +140,11 @@ In this task, you will modify a sample client application with your resource det
     code .
     ```
 
-     ![](../media/analyze-images-computer-vision-service/gt10.png)        
+     ![](../media/az8.png)        
 
 1. In the **Files** pane on the left, expand **ai-search (1)** and select **analyze-image.ps1 (2)**. This file contains some code that uses the Computer Vision service to analyze an image, as shown here:
 
-    ![The editor containing code to analyze an image](../media/analyze-images-computer-vision-service/gt11.png)
+    ![The editor containing code to analyze an image](../media/az9.png)
 
 1. Don't worry too much about the code; the important thing is that it needs the endpoint URL and either of the keys for your Azure AI service resource. Use the Keys and Endpoint that you have copied earlier in **Task 1**.
 
@@ -177,7 +177,7 @@ In this task, you will modify a sample client application with your resource det
     - A list of objects identified in the image.
     - A list of "tags" that are relevant to the image.
 
-      ![The editor containing code to analyze an image](../media/analyze-images-computer-vision-service/gt14.png)     
+      ![The editor containing code to analyze an image](../media/az10.png)     
 
 1. Now let's try another image:
 
@@ -191,7 +191,7 @@ In this task, you will modify a sample client application with your resource det
 
 1. Review the results of the image analysis for the second image.
 
-    ![An image of person with a shopping basket in a supermarket](../media/analyze-images-computer-vision-service/gt15.png)
+    ![An image of person with a shopping basket in a supermarket](../media/az11.png)
 
 1. Let's try one more:
 
@@ -205,7 +205,7 @@ In this task, you will modify a sample client application with your resource det
 
 1. Review the results of the image analysis for the third image.
 
-    ![An image of person with a shopping basket in a supermarket](../media/analyze-images-computer-vision-service/gt16.png)
+    ![An image of person with a shopping basket in a supermarket](../media/az12.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
