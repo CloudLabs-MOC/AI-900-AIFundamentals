@@ -1,6 +1,6 @@
 # Getting started with Azure AI services
 
-## Overall Estimated Duration: 4 Hours
+### Overall Estimated Duration: 4 Hours
 
 ## Overview
 
@@ -53,7 +53,7 @@ Welcome to your Getting started with Azure AI services Lab! We've prepared a sea
  
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
-![Create storage by clicking confirm.](../media/gsaa1.png) 
+![Create storage by clicking confirm.](../media/az1.png) 
 
 ## Lab Guide Zoom In/Zoom Out
 
