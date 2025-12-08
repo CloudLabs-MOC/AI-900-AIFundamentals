@@ -169,7 +169,7 @@ Now that you have tagged the images in your project, you're ready to train a mod
  
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/2-7-25-m2-6.png)
   
-    > **Tip**: Training may take around **10 mins**. While you're waiting, check out [Video analytics for smart cities](https://www.microsoft.com/research/video/video-analytics-for-smart-cities/), which describes a real project to use computer vision in a road safety improvement initiative.
+    > **Tip**: Training may take around **10-15 mins**. While you're waiting, check out [Video analytics for smart cities](https://www.microsoft.com/research/video/video-analytics-for-smart-cities/), which describes a real project to use computer vision in a road safety improvement initiative.
 
 1. When training is complete, review the **Precision**, **Recall**, and **mAP** performance metrics - these measure the prediction goodness of the object detection model, and should all be reasonably high.
 
