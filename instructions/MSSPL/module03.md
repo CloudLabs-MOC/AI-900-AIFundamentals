@@ -30,7 +30,7 @@ In this task, you will create an Azure AI Services resource in the Azure portal 
 
 1. Select **Create (1)** drop down under **Azure AI services** and select **Azure AI services (2)**.
 
-   ![](../media/analyze-images-computer-vision-service/gt2.png)
+   ![](../media/dec2025-azure-aiservices-03.png)
 
 1. On the **Create Azure AI services** tab, under **Project Details**, provide the following settings:
 
