@@ -225,8 +225,8 @@ The Custom Vision portal provides a convenient user interface that you can use t
 
     </details>
 
-    <details><strong>
-    <summary>Python</strong></summary>
+    <details>
+    <summary><strong>Python</strong></summary>
 
     1. Then install the Custom Vision Training package by running the appropriate command for your language preference:
 
@@ -265,7 +265,6 @@ The Custom Vision portal provides a convenient user interface that you can use t
         ![](./images/custvision(23).png)
 
     </details>
-
 
 1. Wait for the program to end. Then return to your browser and view the **Training Images** page for your project in the Custom Vision portal (refreshing the browser if necessary).
 
@@ -335,6 +334,8 @@ Now that you've published the image classification model, you can use it from a 
 
     ![](./images/custvision(30).png)
 
+    </details>
+    
     <details>
     <summary><strong>Python</strong></summary>
 
@@ -367,6 +368,7 @@ Now that you've published the image classification model, you can use it from a 
 
     ![](./images/custvision(30).png)
 
+    </details>
 ## Summary
 In this lab, you have completed:
 
@@ -380,5 +382,6 @@ In this lab, you have completed:
 + Used the image classifier from a client application
    
 ### You have successfully completed the lab, click on Next >>.
+
 
 ![](./images/nextpage(3pages).png)
