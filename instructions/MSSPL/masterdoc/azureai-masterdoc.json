@@ -4,23 +4,23 @@
     "Language": "English",
     "Files": [
 	    {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/refs/heads/MS-Innovation/instructions/MSSPL/gettingstarted(1).md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/refs/heads/MS-Innovation/instructions/MSSPL/gettingstarted(1).md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/refs/heads/MS-Innovation/instructions/MSSPL/module03.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/refs/heads/MS-Innovation/instructions/MSSPL/module03.md",
         "Order": 2
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/refs/heads/MS-Innovation/instructions/MSSPL/module03b.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/refs/heads/MS-Innovation/instructions/MSSPL/module03b.md",
         "Order": 3
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/refs/heads/MS-Innovation/instructions/MSSPL/module03c.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/refs/heads/MS-Innovation/instructions/MSSPL/module03c.md",
         "Order": 4
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/refs/heads/MS-Innovation/instructions/MSSPL/module04b.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/refs/heads/MS-Innovation/instructions/MSSPL/module04b.md",
         "Order": 5
       }
     ]
