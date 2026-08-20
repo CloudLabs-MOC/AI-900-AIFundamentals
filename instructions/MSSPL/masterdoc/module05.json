@@ -4,11 +4,11 @@
     "Language": "English",
     "Files": [
 	    {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/MS-SPL/instructions/MSSPL/gs.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/MS-SPL/instructions/MSSPL/gs.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/MS-SPL/instructions/MSSPL/module05.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/MS-SPL/instructions/MSSPL/module05.md",
         "Order": 2
       }
     ]
