@@ -30,7 +30,7 @@ This lab runs one indexing pipeline with two outputs. Customer review documents 
 
 ## 🖼️ Architecture diagram
 
-![Architecture diagram for the Contoso Coffee knowledge mining lab: a Learner uploads review documents through the Azure portal into a Storage account; Azure AI Search's indexer reads those documents and runs a skillset that calls a Foundry resource for OCR, entity, key phrase, and sentiment analysis; the skillset writes enriched fields into a search index and, separately, a knowledge store back in the Storage account; the Learner queries the index and browses the knowledge store.](../media/knowledge-mining/archdiagram.png)
+![Architecture diagram for the Contoso Coffee knowledge mining lab: a Learner uploads review documents through the Azure portal into a Storage account; Azure AI Search's indexer reads those documents and runs a skillset that calls a Foundry resource for OCR, entity, key phrase, and sentiment analysis; the skillset writes enriched fields into a search index and, separately, a knowledge store back in the Storage account; the Learner queries the index and browses the knowledge store.](../media/knowledge-mining/arch1.png)
 
 ## 🔍 Explanation of Components
 
@@ -73,7 +73,6 @@ For convenience, you can open the lab guide in a separate window by selecting th
 Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
 ![](../media/knowledge-mining/resources.png)
-
 
 ## Let's Get Started with Azure Portal
 
