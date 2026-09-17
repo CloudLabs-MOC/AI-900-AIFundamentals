@@ -1,14 +1,12 @@
 # Hands-on Lab: Explore Knowledge Mining
 
-### Estimated time: 120 minutes
-
 ## 📘 Scenario
 
-Fourth Coffee, a coffee chain with stores across the country, has a growing pile of customer feedback - online reviews, scanned comment cards from in-store kiosks, and photos customers snap of their drinks or the storefront. Nobody on the team has time to read through all of it by hand, so patterns like which store gets complained about most, which phrase keeps showing up in the negative reviews, or whether customers are happier this quarter than last, stay hidden. You've been brought in to fix that: build a knowledge mining solution on **Azure AI Search** that reads every review the moment it lands, automatically tags it with the location it mentions, the key phrases inside it, its overall sentiment, and even a description of any attached photo - then makes all of that instantly searchable.
+Contoso Coffee, a coffee chain with stores across the country, has a growing pile of customer feedback - online reviews, scanned comment cards from in-store kiosks, and photos customers snap of their drinks or the storefront. Nobody on the team has time to read through all of it by hand, so patterns like which store gets complained about most, which phrase keeps showing up in the negative reviews, or whether customers are happier this quarter than last, stay hidden. You've been brought in to fix that: build a knowledge mining solution on **Azure AI Search** that reads every review the moment it lands, automatically tags it with the location it mentions, the key phrases inside it, its overall sentiment, and even a description of any attached photo - then makes all of that instantly searchable.
 
 ## 📖 Overview
 
-This lab walks you through building that solution end to end. You'll spin up the three Azure resources it depends on, load a batch of Fourth Coffee's review documents into Blob Storage, and use Azure AI Search's **Import data** wizard to turn them into an AI-enriched index - no code required for most of it. A couple of pieces (scoring sentiment, and saving a full copy of the enriched data to a knowledge store) have fallen out of the wizard's checkbox list in recent portal updates, so you'll patch those back in yourself by editing the generated skillset directly - a normal thing to do on a real Azure AI Search project, and good practice for working with the service beyond its point-and-click surface. You'll wrap up by running searches and filters against your finished index, and browsing the parallel copy of the data sitting in your knowledge store.
+This lab walks you through building that solution end to end. You'll spin up the three Azure resources it depends on, load a batch of Contoso Coffee's review documents into Blob Storage, and use Azure AI Search's **Import data** wizard to turn them into an AI-enriched index - no code required for most of it. A couple of pieces (scoring sentiment, and saving a full copy of the enriched data to a knowledge store) have fallen out of the wizard's checkbox list in recent portal updates, so you'll patch those back in yourself by editing the generated skillset directly - a normal thing to do on a real Azure AI Search project, and good practice for working with the service beyond its point-and-click surface. You'll wrap up by running searches and filters against your finished index, and browsing the parallel copy of the data sitting in your knowledge store.
 
 ## 🎯 Objective
 
@@ -41,14 +39,18 @@ In this exercise, you will provision the three Azure resources this lab depends 
 1. On the **Create a search service**, 
 
     - Subscription: Leave the default one **(1)**
-    - Resource group: Select **AzureAI-<inject key="DeploymentID" enableCopy="false"/> (2)**
-    - Service name: Enter **aisearch<inject key="DeploymentID" enableCopy="false"/> (3)**
-    - Location: Select **<inject key="Region" enableCopy="false" /> (4)**
+
+    - Resource group: Select **AzureAI-<inject key="DeploymentID" enableCopy="false"/>(2)**
+
+    - Service name: Enter **aisearch<inject key="DeploymentID" enableCopy="false"/>(3)**
+
+    - Location: Select **<inject key="Location" enableCopy="false" />(4)**
+
     - Pricing Tier: Select **Change Pricing Tier (5)** 
 
       ![](../media/knowledge-mining/LTS113.png)
 
-    - Select **Free (1)** and then **Select (2)**. (If **Free** is not available or is already in use, choose **Basic**)
+    - Select **Basic (1)** and then **Select (2)**.
 
       ![](../media/knowledge-mining/LTS114.png)   
 
@@ -60,7 +62,7 @@ In this exercise, you will provision the three Azure resources this lab depends 
 
     ![](../media/knowledge-mining/LTS116.png)
 
-    > **Note:** If AI Search service deployment fails due to regional capacity, try another supported region such as **Canada Central, East US, West US 2, Australia East, or Sweden Central**.
+    > **Note:** If AI Search service deployment fails due to regional capacity, try another supported region such as **Canada Central, East US, West US 2**.
 
 1. Once the deployment is complete, select **Go to resource**.
 
@@ -68,7 +70,7 @@ In this exercise, you will provision the three Azure resources this lab depends 
 
 ### Task 2: Create a Storage Account
 
-1. From the Azure portal, search for **Storage account (1)** and then select **Storage account (2)**.
+1. From the Azure portal, search for **Storage account (1)** and then select **Storage accounts (2)**.
 
     ![](../media/knowledge-mining/LTS131.png)
 
@@ -79,12 +81,19 @@ In this exercise, you will provision the three Azure resources this lab depends 
 1. On the **Create a storage account** page, provide the following details:
 
     - Subscription: Leave the default one **(1)**
-    - Resource group: Select **AzureAI-<inject key="DeploymentID" enableCopy="false"/> (2)**
-    - Storage account name: Enter **mystorage<inject key="DeploymentID" enableCopy="false"/> (3)**
-    - Region: Select **<inject key="Region" enableCopy="false" /> (4)**
+
+    - Resource group: Select **AzureAI-<inject key="DeploymentID" enableCopy="false"/>(2)**
+
+    - Storage account name: Enter **mystorage<inject key="DeploymentID" enableCopy="false"/>(3)**
+
+    - Region: Select **<inject key="Location" enableCopy="false" />(4)**
+
     - Primary service: **Azure Blob Storage or Azure Data Lake Storage (5)**
+
     - Performance: **Standard (6)**
+
     - Redundancy: Select **Locally-redundant storage(LRS) (7)**
+
     - Select **Review + Create (8)**
 
       ![](../media/knowledge-mining/LTS133.png)
@@ -99,7 +108,7 @@ In this exercise, you will provision the three Azure resources this lab depends 
 
 ## Exercise 2: Upload Documents and Build the Search Index
 
-In this exercise, you will upload the Fourth Coffee review documents to Blob Storage, then run the Import data wizard to turn them into a searchable, AI-enriched index. The wizard walks you through connecting to your data, choosing which AI skills to run, and shaping the resulting index - each as its own task below.
+In this exercise, you will upload the Contoso Coffee review documents to Blob Storage, then run the Import data wizard to turn them into a searchable, AI-enriched index. The wizard walks you through connecting to your data, choosing which AI skills to run, and shaping the resulting index - each as its own task below.
 
 ### Task 1: Upload Documents to Azure Storage
 
@@ -171,25 +180,29 @@ Once you have the documents in storage, you can use Azure AI Search to extract i
 
     ![](../media/knowledge-mining/LTS224.png)
 
-    > **Note :** The wizard also offers **RAG** and **Multimodal RAG** tiles - those are for building chatbot-style search over vectorized content, which isn't what this lab covers. **Keyword search** is the classic, AI-enriched full-text search this lab needs.
+    > **Note :** The wizard also offers **RAG** and **Multimodal RAG** tiles - those are for building chatbot-style search over vectorized content. **Keyword search** is the classic, AI-enriched full-text search this lab needs.
 
 1. On the **Connect to your data** page, provide the following details:
 
     - **Subscription:** Select your subscription from the dropdown **(1)**
-    - **Storage account:** Select **mystorage<inject key="DeploymentID" enableCopy="false"/> (2)**
+
+    - **Storage account:** Select **mystorage<inject key="DeploymentID" enableCopy="false"/>(2)**
+
     - **Blob container:** Select **coffee-reviews (3)**
+
     - **Parsing mode:** Leave it as **Default (4)**
+
     - Select **Next (5)**.
 
         ![](../media/knowledge-mining/LTS225.png)
 
-    >**Note**: It may 2-3 minutes to go to the **Apply AI enrichments** page
+        >**Note**: It may take 2-3 minutes to go to the **Apply AI enrichments** page
 
 1. On the **Apply AI enrichments** page, select the **Extract entities (1)** tile then  select its **settings (2)** (gear) icon on that tile.
 
     ![](../media/knowledge-mining/LTS226.png)
 
-1. In the window that opens, select the **Locations (1)** checkbox and click **Save (2)**
+1. In the window that opens, select the **Locations (1)** checkbox only and click **Save (2)**
 
     ![](../media/knowledge-mining/LTS227.png)
 
@@ -255,7 +268,7 @@ In this exercise, you will extend the skillset the wizard just built, since two 
 
     ![](../media/knowledge-mining/LTS311.png)
 
-1. In the left-hand menu, under **Security + networking (1)**, select **Access keys (2)**. Under **key1**, find the **Connection string** box. Click on **Show (3)** and copy the connection string **(4)**and paste it in notepad.
+1. In the left-hand menu, under **Security + networking (1)**, select **Access keys (2)**. Under **key1**, find the **Connection string** box. Click on **Show (3)** and copy the connection string **(4)** and paste it in notepad.
 
     ![](../media/knowledge-mining/LTS312.png)
 
@@ -298,7 +311,7 @@ In this exercise, you will extend the skillset the wizard just built, since two 
 
     ![](../media/knowledge-mining/LTS314.png)
 
-    > **What did you just add?** The **Sentiment** skill reads the `merged_content` field and labels it positive, neutral, or negative. The **Shaper** skill doesn't analyze anything - it just gathers up all the enriched fields you care about (locations, key phrases, sentiment, and image tags) into one bundle, so the knowledge store in the next task has a single, tidy object to save per document. `imageTags` pulls the `name` out of every tag object across every image in the document into one flat list - if you also selected **Generate captions** when you configured the **Extract text from images** skill, you can add a ninth input, `{ "name": "imageCaption", "source": "/document/normalized_images/*/captions/*/text" }`, following the same pattern.
+    > **What did you just add?** The **Sentiment** skill reads the `merged_content` field and labels it positive, neutral, or negative. The **Shaper** skill doesn't analyze anything - it just gathers up all the enriched fields you care about (locations, key phrases, sentiment, and image tags) into one bundle, so the knowledge store in the next task has a single, tidy object to save per document. `imageTags` pulls the `name` out of every tag object across every image in the document into one flat list.
 
 1. In the same JSON editor, scroll to the end of the file, find the closing `]` of the **skills** section, place the cursor immediately after it and before the final `}`, type a comma `,`, press **Enter**, and paste the provided text.
 
@@ -333,26 +346,27 @@ In this exercise, you will extend the skillset the wizard just built, since two 
 
 1. Replace `<paste your storage account connection string here>` with the connection string **(1)** you copied in Task 1 of this exercise. Select **Save (2)** to save the changes in JSON editor.
 
-
     ![](../media/knowledge-mining/LTS316.png)
 
-    >**Note:** If you see a red error message, it almost always means a missing or extra comma - compare your brackets and commas carefully against the snippets above and try again.
+    >**Note:** If you see a red error message, it almost always means a missing or extra comma -please check your brackets and commas carefully and try again.
 
 ### Task 2: Add and Map Sentiment Field
 
-1. Go back to your **Azure AI Search** resource. In the left-hand navigation pane, select **Search management**, then select **Indexes**. Select **coffee-reviews**.
+1. Go back to your **Azure AI Search** resource. In the left-hand navigation pane, under **Search management**, select **Indexes (1)**. Select **coffee-reviews (2)**.
 
-    ![](../media/knowledge-mining/LTS316.png)
+    ![](../media/knowledge-mining/LTS324.png)
 
 1. Select the **Fields (1)** tab then select **+ Add field (2)**.
 
 1. A new window open in right side. Provide the below details and select **Save (6)**
 
     -  **Field name:** Enter **sentiment** in the box **(3)**.
+
     - **Type:** Select **Edm.String** from the dropdown **(4)**.
+
     - **Field options:** Select the **Retrievable**, **Filterable**, and **Facetable** checkboxes **(5)**.
 
-    ![](../media/knowledge-mining/LTS317.png)
+        ![](../media/knowledge-mining/LTS317.png)
 
 1. Select **Save** to save the changes
 
@@ -370,8 +384,8 @@ In this exercise, you will extend the skillset the wizard just built, since two 
 
     ```json
     {
-    "sourceFieldName": "/document/sentiment",
-    "targetFieldName": "sentiment"
+        "sourceFieldName": "/document/sentiment",
+        "targetFieldName": "sentiment"
     },
     ```
 
@@ -397,7 +411,7 @@ In this exercise, you will use **Search explorer**, a query tool built into the 
 
     ![](../media/knowledge-mining/LTS411.png)
 
-1. In the query box, type `*`, and select **Search**. This returns every document in the index. In the results, look for the `@odata.count` field near the top - this shows the total number of matching documents.
+1. In the query box, type `*` **(1)**, and select **Search (2)**. This returns every document in the index. In the results, look for the `@odata.count` **(3)** field near the top - this shows the total number of matching documents.
 
     ![](../media/knowledge-mining/LTS412.png)
 
@@ -443,7 +457,7 @@ In this exercise, you will browse the knowledge store you configured in Exercise
 
 ### Task 1: Review the Object, Image and Table Projections
 
-1. From the Azure portal, search for **Storage account (1)** and then select **Storage account (2)**.
+1. From the Azure portal, search for **Storage account (1)** and then select **Storage accounts (2)**.
 
     ![](../media/knowledge-mining/LTS131.png)
 
