@@ -220,8 +220,6 @@ Once you have the documents in storage, you can use Azure AI Search to extract i
 
     ![](../media/knowledge-mining/LTS230.png)
 
-    > **Note :** Because you selected both OCR and image analysis, the wizard automatically adds a **Text Merge** skill behind the scenes. It combines each document's text with its OCR and image-analysis output into one field named **merged_content**. That's the field location extraction, key phrase extraction, and (later) sentiment analysis will all read from.
-
 1. Review all the three options are selected and click on **Next**.
 
     ![](../media/knowledge-mining/LTS231.png)
@@ -230,7 +228,7 @@ Once you have the documents in storage, you can use Azure AI Search to extract i
 
     ![](../media/knowledge-mining/LTS232.png)
 
-1. On the **Advanced settings** page, **uncheck** the **semantic ranking** option. Leave the remaining as default and Select **Next**. 
+1. On the **Advanced settings** page, **uncheck** the **semantic ranking (1)** option. Leave the remaining as default and Select **Next (2)**. 
 
     ![](../media/knowledge-mining/LTS233.png)
 
@@ -419,7 +417,7 @@ In this exercise, you will use **Search explorer**, a query tool built into the 
 
     ![](../media/knowledge-mining/LTS413.png)
 
-1. In the JSON view box, replace the query with below **(1)**. Select **Search (2)**. This filters for reviews that mention a Chicago location.
+1. In the JSON view box, replace the query with below **(1)**. Select **Search (2)**. This filters for reviews that mention a Chicago location **(3)**.
 
     ```json
     {
@@ -433,7 +431,7 @@ In this exercise, you will use **Search explorer**, a query tool built into the 
 
     > **Note :** `locations` is a collection (an array of strings), so the filter needs the `any()` lambda operator instead of a plain `eq` comparison - `any(l: l eq 'Chicago')` reads as "any single location value in this list equals Chicago."
 
-1. In the JSON view box, replace the query with below **(1)**. Select **Search (2)**. This filters for reviews with a negative overall sentiment.
+1. In the JSON view box, replace the query with below **(1)**. Select **Search (2)**. This filters for reviews with a negative overall sentiment **(3)**.
 
     ```json
     {
