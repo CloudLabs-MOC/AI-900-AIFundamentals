@@ -10,7 +10,7 @@ In this hands-on lab, you'll provision the Azure resources behind a knowledge mi
 
 ## 🎯 Objectives
 
-- **Create Azure resources:** Provision an Azure AI Search resource, a Foundry resource (for AI enrichment), and a Storage account.
+- **Create Azure resources:** Provision an Azure AI Search resource and a Storage account.
 - **Upload documents:** Load the Contoso Coffee customer review files into an Azure Blob Storage container.
 - **Build an AI-enriched index:** Use the Import data wizard's Keyword search scenario to extract locations, key phrases, and image tags/captions from the reviews.
 - **Extend the skillset:** Edit the generated skillset's JSON definition to add sentiment analysis and a knowledge store, since the wizard no longer exposes these as checkboxes.
@@ -35,7 +35,7 @@ This lab runs one indexing pipeline with two outputs. Customer review documents 
 ## 🔍 Explanation of Components
 
 - **Azure AI Search:** The service that holds your searchable index and runs the pipeline that builds it. Formerly known as *Azure Cognitive Search*.
-- **Foundry resource:** Supplies the AI building blocks (OCR, entity/location extraction, key phrase extraction, image tagging, sentiment) used to enrich your documents. Formerly known as *Cognitive Services* or *Azure AI services*.
+- **Foundry resource:** Supplies the AI building blocks (OCR, entity/location extraction, key phrase extraction, image tagging, sentiment) used to enrich your documents.
 - **Storage account:** Holds the raw customer review documents you upload, and also holds the knowledge store - the enriched data saved as tables, JSON files, and images.
 - **Skillset:** The list of AI enrichment steps ("skills") that run on each document during indexing.
 - **Indexer:** The automated job that reads documents from storage, runs the skillset on them, and loads the results into the search index.
