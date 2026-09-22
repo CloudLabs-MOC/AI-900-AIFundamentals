@@ -24,7 +24,7 @@ In this lab, you will complete the following exercises:
 
 ## Exercise 1: Create the Azure Resources
 
-In this exercise, you will provision the three Azure resources this lab depends on: an Azure AI Search resource to hold your index, a Foundry resource to power the AI enrichments, and a Storage account to hold your documents. Each one only takes a few minutes to deploy, and you will create them one at a time across three tasks.
+In this exercise, you will provision the three Azure resources this lab depends on: an Azure AI Search resource to hold your index and a Storage account to hold your documents. Each one only takes a few minutes to deploy, and you will create them one at a time across three tasks.
 
 ### Task 1: Create an Azure AI Search Resource
 
@@ -503,7 +503,7 @@ In this exercise, you will browse the knowledge store you configured in Exercise
 
 ## 🧾 Summary
 
-In this lab, you created the Azure resources behind a knowledge mining solution - an Azure AI Search resource, a Foundry resource, and a Storage account. You uploaded a set of customer review documents and used the Import data wizard to build an AI-enriched search index that extracts locations, key phrases, image tags, and image captions. You then extended the generated skillset by hand to add sentiment analysis and a full knowledge store, since those are no longer available as wizard checkboxes. Finally, you queried your index in Search explorer and browsed the enriched tables, objects, and images saved to your knowledge store.
+In this lab, you created the Azure resources behind a knowledge mining solution - an Azure AI Search resource and a Storage account. You uploaded a set of customer review documents and used the Import data wizard to build an AI-enriched search index that extracts locations, key phrases, image tags, and image captions. You then extended the generated skillset by hand to add sentiment analysis and a full knowledge store, since those are no longer available as wizard checkboxes. Finally, you queried your index in Search explorer and browsed the enriched tables, objects, and images saved to your knowledge store.
 
 ### You have successfully completed this lab.
 
